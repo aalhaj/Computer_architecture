@@ -36,6 +36,101 @@
             margin: 0 auto;
             padding: 20px;
         }
+        
+        @media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .logo p {
+        font-size: 0.8rem;
+    }
+
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* كرت السؤال */
+    .question-card {
+        padding: 15px;
+    }
+
+    .question-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .question-number {
+        margin-bottom: 10px;
+    }
+
+    .question-text {
+        margin: 0;
+    }
+
+    .question-text-ar {
+        font-size: 1rem;
+    }
+
+    .question-text-en {
+        font-size: 0.9rem;
+        border: none;
+        padding: 0;
+        margin-top: 8px;
+    }
+
+    .answer-indicator {
+        margin-top: 10px;
+    }
+
+    /* الأزرار داخل السؤال */
+    .question-actions {
+        flex-direction: column;
+    }
+
+    .action-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* الإحصائيات */
+    .stat-card p {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    .footer-content p {
+        font-size: 0.85rem;
+    }
+}
+button, select {
+    min-height: 44px;
+}
 
         /* الهيدر */
         header {
