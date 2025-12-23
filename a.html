@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Question Viewer (A4)</title>
+
+  <style>
+    /* ===== Print setup (A4) ===== */
+    @page {
+      size: A4;
+      margin: 14mm;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background: #f3f4f6;
+      color: #111827;
+    }
+
+    /* Screen container (centers A4 pages) */
+    .app {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+
+    .toolbar .left,
+    .toolbar .right {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    button,
+    select,
+    input {
+      font: inherit;
+      padding: 8px 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    button:active {
+      transform: translateY(1px);
+    }
+
+    /* A4 sheet */
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      background: #fff;
+      margin: 0 auto 16px auto;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+      box-sizing: border-box;
+      padding: 14mm;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Header / Footer inside sheet */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+    }
+
+    .header .title {
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .header .meta {
+      font-size: 12px;
+      color: #374151;
+    }
+
+    .footer {
+      position: absolute;
+      left: 14mm;
+      right: 14mm;
+      bottom: 10mm;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 6px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #374151;
+    }
+
+    /* Content blocks */
+    .block {
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 12px;
+      margin: 10px 0;
+      background: #ffffff;
+    }
+
+    .label {
+      font-size: 12px;
+      color: #6b7280;
+      margin-bottom: 6px;
+      font-weight: 600;
+      letter-spacing: .2px;
+    }
+
+    .en {
+      direction: ltr;
+      text-align: left;
+      font-size: 15px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+
+    .ar {
+      direction: rtl;
+      text-align: right;
+      font-size: 15px;
+      line-height: 1.7;
+      white-space: pre-wrap;
+    }
+
+    .answer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .answer .col {
+      min-width: 0;
+    }
+
+    .bullets {
+      margin: 0;
+      padding-inline-start: 18px;
+    }
+
+    .bullets li {
+      margin: 4px 0;
+    }
+
+    .ref {
+      font-size: 13px;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+
+    .notice {
+      font-size: 13px;
+      color: #b91c1c;
+      margin-top: 10px;
+      white-space: pre-wrap;
+    }
+
+    /* Print behavior */
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .app {
+        max-width: none;
+        padding: 0;
+      }
+
+      .toolbar {
+        display: none !important;
+      }
+
+      .sheet {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        page-break-after: always;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <div class="toolbar">
+      <div class="left">
+        <button id="btnPrev" type="button">السابق</button>
+        <button id="btnNext" type="button">التالي</button>
+        <!-- أضف هذا الزر داخل .toolbar (مثلاً بجانب زر الطباعة) -->
+<button id="btnExportAll" type="button">تصدير الكل (HTML)</button>
+
+<script>
+/* ============================================================
+   Export ALL questions as one printable HTML file (A4 pages)
+   Includes: English, Arabic, Answer, Reference, "سبب الخطأ"
+   Note: "سبب الخطأ" يتم توليده تلقائياً (Heuristic) إذا لم يوجد في JSON
+   ============================================================ */
+
+function escapeHtml(s) {
+  return String(s ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+function detectCorrectLabel(q) {
+  // يحاول استنتاج الإجابة الصحيحة لسؤال True/False إن وجدت
+  const en = (q.aEn ?? "").toString().trim().toLowerCase();
+  const ar = (q.aAr ?? "").toString().trim();
+  if (en === "true" || ar === "صح") return { en: "True", ar: "صح" };
+  if (en === "false" || ar === "خطأ") return { en: "False", ar: "خطأ" };
+  // fallback
+  return { en: q.aEn ?? "", ar: q.aAr ?? "" };
+}
+
+function buildReasonWrong(q) {
+  // 1) إن وُجد سبب بالـ JSON (أسماء محتملة) استخدمه
+  const candidates = [
+    q.reason_wrong_ar, q.reason_ar, q.explain_wrong_ar, q.rationale_ar,
+    q.reason_wrong_en, q.reason_en, q.explain_wrong_en, q.rationale_en
+  ].filter(Boolean);
+
+  if (candidates.length) return safeText(candidates[0]);
+
+  // 2) توليد سبب افتراضي حسب نوع السؤال
+  if (q.type === "TF") {
+    const correct = detectCorrectLabel(q);
+    return [
+      "سبب الخطأ (افتراضي):",
+      `إذا اخترت عكس الإجابة الصحيحة (${correct.en} / ${correct.ar}) فذلك خطأ.`,
+      "راجع المرجع المذكور للتفصيل وتحديد العبارة الداعمة."
+    ].join("\n");
+  }
+
+  // Essay / Short answer
+  return [
+    "سبب الخطأ (افتراضي):",
+    "الإجابة تُعد خاطئة عادةً عندما:",
+    "1) تُذكر نقاط غير مطلوبة أو تُفقد نقاط أساسية.",
+    "2) يوجد تعارض مع التعريف/القاعدة في المرجع.",
+    "3) يتم الخلط بين مصطلحين أو خطوتين.",
+    "راجع المرجع المذكور واستخرج الجملة/النقطة المطابقة."
+  ].join("\n");
+}
+
+function exportAllToHtml() {
+  // يجمع المجموعتين (Midterm + Bank) في ملف واحد
+  const all = [
+    { title: "Midterm Models", list: listMidterm },
+    { title: "Generated Question Bank", list: listBank }
+  ];
+
+  const now = new Date();
+  const stamp = now.toISOString().slice(0,19).replaceAll(":", "-");
+  const filename = `questions_export_${stamp}.html`;
+
+  const baseCss = `
+    @page { size: A4; margin: 14mm; }
+    body { margin:0; font-family: "Segoe UI", Tahoma, Arial, sans-serif; color:#111827; }
+    .sheet{
+      width:210mm; min-height:297mm; box-sizing:border-box;
+      padding:14mm; page-break-after:always;
+      position:relative;
+    }
+    .header{
+      display:flex; justify-content:space-between; gap:10px; align-items:baseline;
+      border-bottom:1px solid #e5e7eb; padding-bottom:8px; margin-bottom:10px;
+    }
+    .title{ font-weight:700; font-size:16px; }
+    .meta{ font-size:12px; color:#374151; }
+    .block{
+      border:1px solid #e5e7eb; border-radius:14px; padding:12px; margin:10px 0;
+    }
+    .label{ font-size:12px; color:#6b7280; margin-bottom:6px; font-weight:600; }
+    .en{ direction:ltr; text-align:left; font-size:15px; line-height:1.5; white-space:pre-wrap; }
+    .ar{ direction:rtl; text-align:right; font-size:15px; line-height:1.7; white-space:pre-wrap; }
+    .answer{ display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+    .footer{
+      position:absolute; left:14mm; right:14mm; bottom:10mm;
+      border-top:1px solid #e5e7eb; padding-top:6px;
+      display:flex; justify-content:space-between; font-size:12px; color:#374151;
+    }
+  `;
+
+  let pagesHtml = "";
+  let globalPage = 0;
+
+  for (const group of all) {
+    const list = group.list || [];
+    for (let i = 0; i < list.length; i++) {
+      globalPage++;
+      const q = list[i];
+      const reason = buildReasonWrong(q);
+
+      pagesHtml += `
+        <section class="sheet">
+          <div class="header">
+            <div class="title">${escapeHtml(group.title)} — ${escapeHtml(q.label || "")}</div>
+            <div class="meta">${escapeHtml(q.type)} | ${escapeHtml(q.no || (i+1))} | ${i+1}/${list.length}</div>
+          </div>
+
+          <div class="block">
+            <div class="label">English Question</div>
+            <div class="en">${escapeHtml(safeText(q.qEn) || "—")}</div>
+          </div>
+
+          <div class="block">
+            <div class="label">الترجمة العربية</div>
+            <div class="ar">${escapeHtml(safeText(q.qAr) || "—")}</div>
+          </div>
+
+          <div class="block">
+            <div class="label">Answer / Solution</div>
+            <div class="answer">
+              <div>
+                <div class="label">English</div>
+                <div class="en">${escapeHtml(safeText(q.aEn) || "—")}</div>
+              </div>
+              <div>
+                <div class="label">العربية</div>
+                <div class="ar">${escapeHtml(safeText(q.aAr) || "—")}</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="label">Reference (file + page)</div>
+            <div class="en">${escapeHtml(safeText(q.ref) || "—")}</div>
+          </div>
+
+          <div class="block">
+            <div class="label">سبب الخطأ</div>
+            <div class="ar">${escapeHtml(reason || "—")}</div>
+          </div>
+
+          <div class="footer">
+            <div>Source JSON: ${escapeHtml(JSON_PATH)}</div>
+            <div>Page ${globalPage}</div>
+          </div>
+        </section>
+      `;
+    }
+  }
+
+  const fullHtml = `
+    <!doctype html>
+    <html lang="ar" dir="rtl">
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <title>Questions Export</title>
+      <style>${baseCss}</style>
+    </head>
+    <body>
+      ${pagesHtml || "<p>No questions found.</p>"}
+      <script>
+        // auto open print dialog if you want:
+        // window.onload = () => window.print();
+      <\/script>
+    </body>
+    </html>
+  `;
+
+  const blob = new Blob([fullHtml], { type: "text/html;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+
+  setTimeout(() => URL.revokeObjectURL(url), 2000);
+}
+
+document.getElementById("btnExportAll").addEventListener("click", exportAllToHtml);
+</script>
+
+<!-- 1) زر تصدير PDF (أضفه داخل .toolbar) -->
+<button id="btnExportPdf" type="button">تصدير PDF</button>
+
+<!-- 2) مكتبة html2pdf (ضعها قبل سكربت التصدير) -->
+<script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
+
+<script>
+/* ============================================================
+   Export ALL questions to PDF (A4)
+   Requires: html2pdf.js
+   ============================================================ */
+
+function exportAllToPdf() {
+  const all = [
+    { title: "Midterm Models", list: listMidterm },
+    { title: "Generated Question Bank", list: listBank }
+  ];
+
+  // عنصر مؤقت نبني بداخله كل صفحات A4 ثم نحوّلها PDF
+  const container = document.createElement("div");
+
+  const css = `
+    <style>
+      @page { size: A4; margin: 14mm; }
+      body{ margin:0; font-family:"Segoe UI",Tahoma,Arial,sans-serif; color:#111827; }
+      .sheet{
+        width:210mm; min-height:297mm; box-sizing:border-box;
+        padding:14mm; page-break-after:always; position:relative;
+      }
+      .header{
+        display:flex; justify-content:space-between; gap:10px; align-items:baseline;
+        border-bottom:1px solid #e5e7eb; padding-bottom:8px; margin-bottom:10px;
+      }
+      .title{ font-weight:700; font-size:16px; }
+      .meta{ font-size:12px; color:#374151; }
+      .block{ border:1px solid #e5e7eb; border-radius:14px; padding:12px; margin:10px 0; }
+      .label{ font-size:12px; color:#6b7280; margin-bottom:6px; font-weight:600; }
+      .en{ direction:ltr; text-align:left; font-size:15px; line-height:1.5; white-space:pre-wrap; }
+      .ar{ direction:rtl; text-align:right; font-size:15px; line-height:1.7; white-space:pre-wrap; }
+      .answer{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+      .footer{
+        position:absolute; left:14mm; right:14mm; bottom:10mm;
+        border-top:1px solid #e5e7eb; padding-top:6px;
+        display:flex; justify-content:space-between; font-size:12px; color:#374151;
+      }
+    </style>
+  `;
+  container.innerHTML = css;
+
+  let pageNo = 0;
+
+  for (const group of all) {
+    const list = group.list || [];
+    for (let i = 0; i < list.length; i++) {
+      const q = list[i];
+      const reason = buildReasonWrong(q); // من الكود السابق
+
+      pageNo++;
+
+      const sheet = document.createElement("section");
+      sheet.className = "sheet";
+      sheet.innerHTML = `
+        <div class="header">
+          <div class="title">${escapeHtml(group.title)} — ${escapeHtml(q.label || "")}</div>
+          <div class="meta">${escapeHtml(q.type)} | ${escapeHtml(q.no || (i+1))} | ${i+1}/${list.length}</div>
+        </div>
+
+        <div class="block">
+          <div class="label">English Question</div>
+          <div class="en">${escapeHtml(safeText(q.qEn) || "—")}</div>
+        </div>
+
+        <div class="block">
+          <div class="label">الترجمة العربية</div>
+          <div class="ar">${escapeHtml(safeText(q.qAr) || "—")}</div>
+        </div>
+
+        <div class="block">
+          <div class="label">Answer / Solution</div>
+          <div class="answer">
+            <div>
+              <div class="label">English</div>
+              <div class="en">${escapeHtml(safeText(q.aEn) || "—")}</div>
+            </div>
+            <div>
+              <div class="label">العربية</div>
+              <div class="ar">${escapeHtml(safeText(q.aAr) || "—")}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="label">Reference (file + page)</div>
+          <div class="en">${escapeHtml(safeText(q.ref) || "—")}</div>
+        </div>
+
+        <div class="block">
+          <div class="label">سبب الخطأ</div>
+          <div class="ar">${escapeHtml(reason || "—")}</div>
+        </div>
+
+        <div class="footer">
+          <div>Source JSON: ${escapeHtml(JSON_PATH)}</div>
+          <div>Page ${pageNo}</div>
+        </div>
+      `;
+      container.appendChild(sheet);
+    }
+  }
+
+  // إعدادات PDF
+  const now = new Date();
+  const stamp = now.toISOString().slice(0,10);
+  const opt = {
+    margin: 0,
+    filename: `questions_${stamp}.pdf`,
+    image: { type: "jpeg", quality: 0.98 },
+    html2canvas: {
+      scale: 2,            // جودة أعلى
+      useCORS: true,
+      letterRendering: true
+    },
+    jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+    pagebreak: { mode: ["css", "legacy"] }
+  };
+
+  html2pdf().set(opt).from(container).save();
+}
+
+document.getElementById("btnExportPdf").addEventListener("click", exportAllToPdf);
+</script>
+
+        <label>
+          رقم السؤال:
+          <input id="qIndex" type="number" min="1" step="1" style="width: 90px" />
+        </label>
+        <select id="qGroup">
+          <option value="midterm">Midterm Models</option>
+          <option value="bank">Generated Question Bank</option>
+        </select>
+      </div>
+      <div class="right">
+        <button id="btnPrint" type="button">طباعة</button>
+      </div>
+    </div>
+
+    <!-- A4 Page -->
+    <section class="sheet" id="sheet">
+      <div class="header">
+        <div class="title" id="sheetTitle">Question Viewer</div>
+        <div class="meta" id="sheetMeta">—</div>
+      </div>
+
+      <div class="block">
+        <div class="label">English Question</div>
+        <div class="en" id="qEn">—</div>
+      </div>
+
+      
+
+      <div class="block">
+        <div class="label">الترجمة العربية</div>
+        <div class="ar" id="qAr">—</div>
+      </div>
+
+      <div class="block">
+        <div class="label">Answer / Solution</div>
+        <div class="answer">
+          <div class="col">
+            <div class="label">English</div>
+            <div class="en" id="aEn">—</div>
+          </div>
+          <div class="col">
+            <div class="label">العربية</div>
+            <div class="ar" id="aAr">—</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="label">Reference (file + page)</div>
+        <div class="ref" id="ref">—</div>
+      </div>
+
+      <div class="notice" id="notice" style="display:none;"></div>
+
+      <div class="footer">
+        <div id="footerLeft">—</div>
+        <div id="footerRight">—</div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    /* ============================================================
+       Only configure JSON path here (do NOT embed questions in HTML)
+       ============================================================ */
+    const JSON_PATH = "questions.json";
+
+    /* ===== Data state ===== */
+    let raw = null;
+
+    // Flattened question lists (each item => normalized shape)
+    let listMidterm = [];
+    let listBank = [];
+    let activeList = [];
+    let activeIndex = 0;
+
+    /* ===== Helpers ===== */
+    const $ = (id) => document.getElementById(id);
+
+    function safeText(x) {
+      if (x === null || x === undefined) return "";
+      if (Array.isArray(x)) return x.join("\n");
+      return String(x);
+    }
+
+    function formatSupport(supportArr) {
+      if (!Array.isArray(supportArr) || supportArr.length === 0) return "—";
+      // Example: chapter 1-2025.pdf p. 9
+      return supportArr
+        .map(s => `${s.file ?? "—"}  |  p. ${s.page ?? "—"}`)
+        .join("\n");
+    }
+
+    function normalizeTF(item, context) {
+      // context can hold exam/chapter labels
+      return {
+        type: "TF",
+        label: context,
+        qEn: item.statement_en ?? "",
+        qAr: item.statement_ar ?? "",
+        aEn: item.answer_en ?? (item.answer_boolean === true ? "True" : item.answer_boolean === false ? "False" : ""),
+        aAr: item.answer_ar ?? (item.answer_boolean === true ? "صح" : item.answer_boolean === false ? "خطأ" : ""),
+        ref: formatSupport(item.support ?? (item.source ? [item.source] : [])),
+        no: item.no ?? item.id ?? ""
+      };
+    }
+
+    function normalizeEssay(item, context) {
+      const enPoints = item.answer_points_en;
+      const arPoints = item.answer_points_ar;
+
+      const aEn = Array.isArray(enPoints)
+        ? enPoints.map((p, i) => `${i + 1}. ${p}`).join("\n")
+        : safeText(item.answer_en ?? "");
+
+      const aAr = Array.isArray(arPoints)
+        ? arPoints.map((p, i) => `${i + 1}. ${p}`).join("\n")
+        : safeText(item.answer_ar ?? "");
+
+      return {
+        type: "Essay",
+        label: context,
+        qEn: item.question_en ?? "",
+        qAr: item.question_ar ?? "",
+        aEn,
+        aAr,
+        ref: formatSupport(item.support ?? (item.source ? [item.source] : [])),
+        no: item.no ?? item.id ?? ""
+      };
+    }
+
+    function buildLists(data) {
+      // Midterm models (A/B/G1...)
+      const mid = data?.midterm_models_solutions?.exams ?? [];
+      listMidterm = [];
+      for (const exam of mid) {
+        const ctx = `${exam.exam_name_en ?? exam.exam_id ?? "Exam"}  (${exam.exam_id ?? ""})`;
+
+        for (const tf of (exam.true_false ?? [])) {
+          listMidterm.push(normalizeTF(tf, ctx));
+        }
+        for (const es of (exam.essay ?? [])) {
+          listMidterm.push(normalizeEssay(es, ctx));
+        }
+      }
+
+      // Generated bank by chapters
+      const chapters = data?.generated_question_bank_from_chapters?.chapters ?? [];
+      listBank = [];
+      for (const ch of chapters) {
+        const ctx = `Chapter ${ch.chapter_id ?? "—"}: ${ch.chapter_title_en ?? ""}`;
+        for (const tf of (ch.true_false ?? [])) {
+          listBank.push(normalizeTF(tf, ctx));
+        }
+        for (const es of (ch.essay ?? [])) {
+          listBank.push(normalizeEssay(es, ctx));
+        }
+      }
+    }
+
+    function setActiveList(group) {
+      if (group === "bank") activeList = listBank;
+      else activeList = listMidterm;
+
+      // clamp index
+      if (activeIndex >= activeList.length) activeIndex = Math.max(0, activeList.length - 1);
+      render();
+    }
+
+    function render() {
+      const notice = $("notice");
+      notice.style.display = "none";
+      notice.textContent = "";
+
+      if (!activeList || activeList.length === 0) {
+        $("sheetTitle").textContent = "Question Viewer";
+        $("sheetMeta").textContent = "No questions found in JSON.";
+        $("qEn").textContent = "—";
+        $("qAr").textContent = "—";
+        $("aEn").textContent = "—";
+        $("aAr").textContent = "—";
+        $("ref").textContent = "—";
+        $("footerLeft").textContent = "—";
+        $("footerRight").textContent = "—";
+        $("qIndex").value = 0;
+        return;
+      }
+
+      const q = activeList[activeIndex];
+
+      $("sheetTitle").textContent = q.label || "Question Viewer";
+      $("sheetMeta").textContent =
+        `${q.type}  |  Item: ${safeText(q.no) || (activeIndex + 1)}  |  ${activeIndex + 1} / ${activeList.length}`;
+
+      $("qEn").textContent = safeText(q.qEn) || "—";
+      $("qAr").textContent = safeText(q.qAr) || "—";
+
+      $("aEn").textContent = safeText(q.aEn) || "—";
+      $("aAr").textContent = safeText(q.aAr) || "—";
+
+      $("ref").textContent = safeText(q.ref) || "—";
+
+      $("footerLeft").textContent = `Source: ${JSON_PATH}`;
+      $("footerRight").textContent = `Page ${activeIndex + 1}`;
+
+      $("qIndex").value = activeIndex + 1;
+    }
+
+    async function load() {
+      try {
+        const res = await fetch(JSON_PATH, { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+        raw = await res.json();
+        buildLists(raw);
+
+        // default: midterm
+        $("qGroup").value = "midterm";
+        activeIndex = 0;
+        setActiveList("midterm");
+      } catch (err) {
+        const notice = $("notice");
+        notice.style.display = "block";
+        notice.textContent =
+          "Failed to load JSON.\n" +
+          `Path: ${JSON_PATH}\n` +
+          `Error: ${err?.message ?? err}`;
+      }
+    }
+
+    /* ===== UI wiring ===== */
+    $("btnPrev").addEventListener("click", () => {
+      if (!activeList.length) return;
+      activeIndex = Math.max(0, activeIndex - 1);
+      render();
+    });
+
+    $("btnNext").addEventListener("click", () => {
+      if (!activeList.length) return;
+      activeIndex = Math.min(activeList.length - 1, activeIndex + 1);
+      render();
+    });
+
+    $("qIndex").addEventListener("change", () => {
+      if (!activeList.length) return;
+      const n = parseInt($("qIndex").value, 10);
+      if (Number.isFinite(n)) {
+        activeIndex = Math.min(activeList.length - 1, Math.max(0, n - 1));
+        render();
+      }
+    });
+
+    $("qGroup").addEventListener("change", () => {
+      setActiveList($("qGroup").value);
+    });
+
+    $("btnPrint").addEventListener("click", () => window.print());
+
+    load();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,3124 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-12-22",
+  "language": {
+    "questions": [
+      "en",
+      "ar"
+    ],
+    "answers": [
+      "en",
+      "ar"
+    ]
+  },
+  "midterm_models_solutions": {
+    "source_file": "نماذج_الإختبار_النصفي_معمارية_حاسوب_د_منال_العريقي_CS24.pdf",
+    "exams": [
+      {
+        "exam_id": "A",
+        "exam_name_en": "Model Exam A",
+        "exam_name_ar": "نموذج اختبار (A)",
+        "true_false": [
+          {
+            "no": 1,
+            "statement_en": "Memory technology used is an organizational attribute.",
+            "statement_ar": "تقنية الذاكرة المستخدمة تُعد من خصائص/سمات تنظيم الحاسوب (Organizational attributes).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": "",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 9
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "statement_en": "Computer architecture and organization deals with high-level design issues.",
+            "statement_ar": "كلٌّ من معمارية الحاسوب وتنظيم الحاسوب يتعاملان مع قضايا التصميم عالية المستوى (High-level).",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Computer architecture deals with high-level, programmer-visible attributes; computer organization focuses on implementation/structural details (how it works).",
+            "correction_ar": "معمارية الحاسوب تتعامل مع الخصائص عالية المستوى الظاهرة للمبرمج، بينما تنظيم الحاسوب يركّز على تفاصيل التنفيذ والترابط البنيوي (كيف يعمل الحاسوب).",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 9
+              },
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 10
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "statement_en": "The operating system is part of the software layer, that translates high-level language into binary form.",
+            "statement_ar": "نظام التشغيل هو جزء من طبقة البرمجيات وهو الذي يترجم اللغة عالية المستوى إلى صيغة ثنائية (Binary).",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "A compiler translates high-level language to lower-level (e.g., assembly/machine code); the operating system provides runtime services and resource management.",
+            "correction_ar": "المُصرّف (Compiler) هو الذي يترجم اللغة عالية المستوى إلى لغة أدنى (مثل التجميع/لغة الآلة)، بينما نظام التشغيل يوفّر خدمات التشغيل وإدارة الموارد.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 11
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "statement_en": "The control mechanism is responsible for executing instructions and making decisions.",
+            "statement_ar": "آلية التحكم (Control mechanism) مسؤولة عن تنفيذ التعليمات واتخاذ القرارات.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": "",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 15
+              },
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 16
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "statement_en": "The Control Unit contains sequencing logic, control unit registers and decoders such as AC, and control memory.",
+            "statement_ar": "وحدة التحكم تحتوي على منطق التسلسل (sequencing logic)، وسجلات وحدة التحكم ومفككات الشيفرة (decoders) مثل AC، وذاكرة التحكم (control memory).",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "AC (Accumulator) is a CPU register used to hold operands/results, not a decoder inside the control unit.",
+            "correction_ar": "المسجل AC (Accumulator) هو سجل داخل المعالج لحفظ القيم/النتائج، وليس مفكك شيفرة (decoder) داخل وحدة التحكم.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 35
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "statement_en": "The IBR (Instruction Register) holds the instructions that are currently being executed.",
+            "statement_ar": "السجل IBR (Instruction Register) يحتفظ بالتعليمات التي يتم تنفيذها حالياً.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "IR holds the opcode of the instruction being executed; IBR (Instruction Buffer Register) temporarily holds the right-hand instruction from a memory word.",
+            "correction_ar": "السجل IR يحتفظ بـ opcode للتعليمة الجاري تنفيذها، بينما IBR (Instruction Buffer Register) يحتفظ مؤقتاً بالتعليمة الموجودة في النصف الأيمن من كلمة الذاكرة.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 35
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "statement_en": "High-level programming languages were introduced in the second generation.",
+            "statement_ar": "اللغات البرمجية عالية المستوى تم إدخالها في الجيل الثاني من الحواسيب.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": "",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 38
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "statement_en": "The use of integrated circuits made computers cheaper.",
+            "statement_ar": "استخدام الدوائر المتكاملة (Integrated Circuits) جعل الحواسيب أرخص.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": "",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 40
+              },
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 46
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "statement_en": "Embedded systems are designed to be general-purpose.",
+            "statement_ar": "الأنظمة المضمنة (Embedded systems) تُصمَّم لتكون متعددة الأغراض (General-purpose).",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Embedded systems are electronics and software within a product, typically designed for a specific application/function rather than general-purpose computing.",
+            "correction_ar": "الأنظمة المضمنة هي إلكترونيات وبرمجيات داخل منتج، وغالباً تكون مخصّصة لتطبيق/وظيفة محددة وليست للاستخدام العام مثل الحاسب المكتبي.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 53
+              },
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 56
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "statement_en": "The memory module is responsible for communicating with external devices.",
+            "statement_ar": "وحدة الذاكرة مسؤولة عن التواصل مع الأجهزة الخارجية.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "The I/O subsystem moves data between the computer and its external environment; main memory stores data.",
+            "correction_ar": "نظام الإدخال/الإخراج (I/O) هو الذي ينقل البيانات بين الحاسوب والبيئة الخارجية، بينما الذاكرة الرئيسية تقوم بتخزين البيانات.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 18
+              }
+            ]
+          }
+        ],
+        "essay": [
+          {
+            "no": 1,
+            "question_en": "List and briefly define TWO techniques used to increase processor speed.",
+            "question_ar": "اذكر وعرّف بإيجاز تقنيتين (2) تُستخدمان لزيادة سرعة المعالج.",
+            "answer_points_en": [
+              "Pipelining: overlaps stages of multiple instructions to reduce overall program execution time.",
+              "Superscalar execution: issues multiple independent instructions per clock cycle using multiple parallel pipelines."
+            ],
+            "answer_points_ar": [
+              "خط الأنابيب (Pipelining): تراكب مراحل تنفيذ عدة تعليمات لتقليل الزمن الكلي لتنفيذ البرنامج.",
+              "التنفيذ فائق التدرّج (Superscalar): إصدار عدة تعليمات مستقلة في نفس دورة الساعة باستخدام عدة خطوط أنابيب متوازية."
+            ],
+            "support": [
+              {
+                "file": "chapter 2-2025.pdf",
+                "page": 3
+              },
+              {
+                "file": "chapter 2-2025.pdf",
+                "page": 4
+              },
+              {
+                "file": "chapter 2-2025.pdf",
+                "page": 7
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "question_en": "What is the distinction between computer structure and computer function?",
+            "question_ar": "ما الفرق بين بنية الحاسوب (Structure) ووظيفة الحاسوب (Function)؟",
+            "answer_points_en": [
+              "Structure: the way components are interrelated.",
+              "Function: the operation of each individual component as part of the structure."
+            ],
+            "answer_points_ar": [
+              "البنية (Structure): الطريقة التي ترتبط بها مكوّنات النظام ببعضها (العلاقات والترابط).",
+              "الوظيفة (Function): عمل كل مكوّن بشكل فردي ضمن هذه البنية."
+            ],
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 14
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "question_en": "Explain the Internet of Things (IoT) and give FOUR applications.",
+            "question_ar": "اشرح إنترنت الأشياء (IoT) واذكر أربعة تطبيقات/أمثلة.",
+            "answer_points_en": [
+              "IoT: expanding interconnection of smart devices (from appliances to tiny sensors), driven primarily by deeply embedded devices.",
+              "Applications/examples: smart home appliances; wearable health sensors; industrial sensors/actuators; smart city sensors (traffic/lighting)."
+            ],
+            "answer_points_ar": [
+              "إنترنت الأشياء: هو توسّع ترابط الأجهزة الذكية (من الأجهزة المنزلية إلى الحساسات الصغيرة) ويُقاد بشكل أساسي بالأجهزة المضمنة بعمق.",
+              "أمثلة/تطبيقات: أجهزة منزل ذكية؛ حساسات صحية قابلة للارتداء؛ حساسات/مشغّلات صناعية؛ حساسات المدن الذكية (المرور/الإنارة)."
+            ],
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 62
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "question_en": "Explain Direct Memory Access (DMA) and why it is used.",
+            "question_ar": "اشرح الوصول المباشر للذاكرة (DMA) ولماذا يُستخدم.",
+            "answer_points_en": [
+              "DMA allows an I/O module to read/write memory directly without tying up the processor.",
+              "The processor grants the I/O module authority to transfer data; this relieves the processor from responsibility for the exchange."
+            ],
+            "answer_points_ar": [
+              "DMA يسمح لوحدة الإدخال/الإخراج بقراءة/كتابة الذاكرة مباشرة دون إشغال المعالج طوال عملية النقل.",
+              "المعالج يمنح وحدة I/O صلاحية النقل، وهذا يخفّف الحمل عن المعالج ويجعله غير مسؤول عن تفاصيل التبادل."
+            ],
+            "support": [
+              {
+                "file": "chapter 3-2025.pdf",
+                "page": 27
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "question_en": "Explain the relationship between access time, memory cost, and capacity.",
+            "question_ar": "اشرح العلاقة بين زمن الوصول (Access time)، تكلفة الذاكرة (Cost)، والسعة (Capacity).",
+            "answer_points_en": [
+              "There is a trade-off among capacity, access time, and cost per bit.",
+              "Faster access time usually means greater cost per bit.",
+              "Greater capacity usually means smaller cost per bit but slower access time."
+            ],
+            "answer_points_ar": [
+              "هناك مفاضلة (Trade-off) بين السعة وزمن الوصول وتكلفة البِت.",
+              "كلما كانت الذاكرة أسرع (زمن وصول أقل) زادت تكلفة البِت.",
+              "كلما زادت السعة عادةً تقل تكلفة البِت لكن يصبح زمن الوصول أبطأ."
+            ],
+            "support": [
+              {
+                "file": "chapter 4-2025.pdf",
+                "page": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "exam_id": "B",
+        "exam_name_en": "Model Exam B",
+        "exam_name_ar": "نموذج اختبار (B)",
+        "true_false": [
+          {
+            "no": 1,
+            "statement_en": "The instruction set is an organization attribute.",
+            "statement_ar": "مجموعة التعليمات (Instruction set) تُعد من خصائص التنظيم (Organization).",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "The instruction set is an architectural attribute (programmer-visible).",
+            "correction_ar": "مجموعة التعليمات تُعد من خصائص المعمارية (Architecture) لأنها مرئية للمبرمج.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 9
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "statement_en": "The actors in computer architecture are hardware parts.",
+            "statement_ar": "الفاعلون (Actors) في معمارية الحاسوب هم الأجزاء المادية (Hardware parts).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": "",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 10
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "statement_en": "There is no relationship between structure and function in computer system.",
+            "statement_ar": "لا توجد علاقة بين البنية (Structure) والوظيفة (Function) في نظام الحاسوب.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Structure and function are related: function describes what each component does within the overall structure (interrelationships).",
+            "correction_ar": "هناك علاقة: الوظيفة تصف عمل كل مكوّن ضمن البنية التي تحدد ترابط المكوّنات معاً.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 14
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "statement_en": "The control signals are generated by the Program Control Unit (CC).",
+            "statement_ar": "إشارات التحكم (Control signals) يتم توليدها بواسطة وحدة التحكم بالبرنامج (CC).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": "",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 32
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "statement_en": "Gates are used to store data.",
+            "statement_ar": "البوابات المنطقية (Gates) تُستخدم لتخزين البيانات.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Gates provide data processing (Boolean function implementation); memory cells are used to store data (bits).",
+            "correction_ar": "البوابات تُستخدم لمعالجة البيانات (تنفيذ الدوال المنطقية)، بينما خلايا الذاكرة هي التي تخزّن البيانات (بتات).",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 41
+              },
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 42
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "statement_en": "Embedded systems are typically designed to interact more with humans than general-purpose computers.",
+            "statement_ar": "الأنظمة المضمنة عادةً تُصمَّم لتتفاعل مع الإنسان أكثر من الحواسيب متعددة الأغراض.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Embedded systems often have a simple or no human interface; many operate with minimal human interaction.",
+            "correction_ar": "الأنظمة المضمنة غالباً واجهتها البشرية بسيطة أو غير موجودة، وكثير منها يعمل بتفاعل بشري محدود جداً.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 56
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "statement_en": "Cache memory is used to store frequently used data and instructions.",
+            "statement_ar": "ذاكرة الكاش تُستخدم لتخزين البيانات والتعليمات كثيرة الاستخدام.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": "",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 24
+              },
+              {
+                "file": "chapter 5-2025.pdf",
+                "page": 5
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "statement_en": "The control unit of the IAS computer interprets instructions and executes them.",
+            "statement_ar": "وحدة التحكم في حاسوب IAS تفسّر التعليمات وتسبب تنفيذها.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": "",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 31
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "statement_en": "Registers are a type of primary memory that is located within the CPU.",
+            "statement_ar": "السجلات (Registers) نوع من الذاكرة الأساسية (Primary memory) الموجودة داخل وحدة المعالجة المركزية.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": "",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 19
+              }
+            ]
+          },
+          {
+            "no": 10,
+            "statement_en": "The actor in computer organization is performance.",
+            "statement_ar": "الفاعل (Actor) في تنظيم الحاسوب هو الأداء (Performance).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": "",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 10
+              }
+            ]
+          }
+        ],
+        "essay": [
+          {
+            "no": 1,
+            "question_en": "List four generations of computers and mention the main differences.",
+            "question_ar": "اذكر أربعة أجيال من الحواسيب واذكر الفروقات/التقنيات الرئيسية لكل جيل.",
+            "answer_points_en": [
+              "1st generation (1946–1957): Vacuum tubes; expensive, large, high heat, less reliable.",
+              "2nd generation (1958–1964): Transistors; smaller, cheaper, less power, more reliable; high-level languages introduced.",
+              "3rd generation (1965–1971): Integrated circuits; more speed/reliability; lower cost; OS/monitors developed.",
+              "4th generation (1972–present): Microprocessors (LSI/VLSI); personal computers; very high integration and performance."
+            ],
+            "answer_points_ar": [
+              "الجيل الأول (1946–1957): أنابيب مفرّغة (Vacuum tubes)؛ كبير ومكلف ويولد حرارة وموثوقيته أقل.",
+              "الجيل الثاني (1958–1964): ترانزستورات (Transistors)؛ أصغر وأرخص واستهلاك طاقة أقل وأكثر موثوقية؛ ظهرت لغات عالية المستوى.",
+              "الجيل الثالث (1965–1971): دوائر متكاملة (Integrated Circuits)؛ سرعة وموثوقية أعلى وتكلفة أقل؛ تطوّر أنظمة التشغيل/المراقبات.",
+              "الجيل الرابع (1972–حتى الآن): معالجات دقيقة (Microprocessors) بتقنيات LSI/VLSI؛ ظهور الحواسيب الشخصية وزيادة التكامل والأداء."
+            ],
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 27
+              },
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 38
+              },
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 40
+              },
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 48
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "question_en": "What is the difference between general-purpose computers and embedded systems?",
+            "question_ar": "ما الفرق بين الحواسيب متعددة الأغراض (General-purpose) والأنظمة المضمنة (Embedded systems)؟",
+            "answer_points_en": [
+              "General-purpose: designed to run many different applications; rich user interfaces; easy upgrades and configuration.",
+              "Embedded: electronics/software within a product; often fixed function, limited resources, simple/no human interface; optimized for power/cost/size."
+            ],
+            "answer_points_ar": [
+              "متعددة الأغراض: مصممة لتشغيل تطبيقات كثيرة ومختلفة؛ واجهة مستخدم غنية؛ سهلة التحديث والتهيئة.",
+              "مضمنة: إلكترونيات/برمجيات داخل منتج؛ غالباً وظيفة محددة وثابتة وموارد محدودة؛ واجهة بشرية بسيطة أو غير موجودة؛ مُحسّنة للطاقة/التكلفة/الحجم."
+            ],
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 53
+              },
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 56
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "question_en": "Define interrupts and list the classes of interrupts.",
+            "question_ar": "عرّف المقاطعات (Interrupts) واذكر أصناف/أنواع المقاطعات.",
+            "answer_points_en": [
+              "Interrupt: a signal requesting the processor to suspend current execution, service the interrupt, then resume the suspended program.",
+              "Classes: Program; Timer; I/O; Hardware failure."
+            ],
+            "answer_points_ar": [
+              "المقاطعة: إشارة تطلب من المعالج إيقاف التنفيذ الحالي مؤقتاً وخدمة المقاطعة ثم العودة للبرنامج المعلّق.",
+              "الأنواع: برنامج (Program)؛ مؤقّت (Timer)؛ إدخال/إخراج (I/O)؛ عطل عتادي (Hardware failure)."
+            ],
+            "support": [
+              {
+                "file": "chapter 3-2025.pdf",
+                "page": 20
+              },
+              {
+                "file": "chapter 3-2025.pdf",
+                "page": 22
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "question_en": "What are the differences among multicore, MICs, and GPGPUs?",
+            "question_ar": "ما الفروقات بين Multicore و MIC و GPGPU؟",
+            "answer_points_en": [
+              "Multicore: multiple general-purpose processor cores on the same chip (often with shared cache).",
+              "MIC (Many Integrated Core): a large number of (homogeneous) general-purpose cores per chip; big parallelism but software challenges.",
+              "GPU/GPGPU: chip with general-purpose processors plus GPUs/specialized cores; excels at repetitive/vector computations and graphics/video tasks."
+            ],
+            "answer_points_ar": [
+              "Multicore: عدة أنوية معالجة عامة على نفس الشريحة (غالباً مع كاش مشترك).",
+              "MIC: عدد كبير جداً من الأنوية العامة المتجانسة على الشريحة؛ يعطي قفزة في الأداء مع تحديات برمجية للاستفادة من الأنوية.",
+              "GPU/GPGPU: شريحة تحتوي معالجات عامة بالإضافة إلى وحدات معالجة رسومية ونوى متخصصة؛ قوية في الرسوميات والحسابات المتكررة/المتجهات."
+            ],
+            "support": [
+              {
+                "file": "chapter 2-2025.pdf",
+                "page": 16
+              },
+              {
+                "file": "chapter 2-2025.pdf",
+                "page": 18
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "question_en": "List and briefly define TWO characteristics of memory systems.",
+            "question_ar": "اذكر وعرّف بإيجاز خاصيتين (2) من خصائص أنظمة الذاكرة.",
+            "answer_points_en": [
+              "Location: internal (registers/cache/main memory) vs external (disks/tapes) accessed via I/O.",
+              "Access method: sequential, direct, random, or associative (based on content)."
+            ],
+            "answer_points_ar": [
+              "الموقع (Location): ذاكرة داخلية (سجلات/كاش/ذاكرة رئيسية) مقابل ذاكرة خارجية (أقراص/أشرطة) عبر وحدات I/O.",
+              "طريقة الوصول (Access method): تسلسلي، مباشر، عشوائي، أو ترابطي/ارتباطي (حسب المحتوى)."
+            ],
+            "support": [
+              {
+                "file": "chapter 4-2025.pdf",
+                "page": 3
+              },
+              {
+                "file": "chapter 4-2025.pdf",
+                "page": 7
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "exam_id": "G1",
+        "exam_name_en": "Model Exam G1",
+        "exam_name_ar": "نموذج اختبار (G1)",
+        "true_false": [
+          {
+            "no": 1,
+            "statement_en": "Computer organization is a subset of computer architecture.",
+            "statement_ar": "تنظيم الحاسوب (Computer Organization) يُعد جزءاً/فرعاً من معمارية الحاسوب (Computer Architecture).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": "",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 9
+              },
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 10
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "statement_en": "The datapath and control unit are part of the software layer.",
+            "statement_ar": "مسار البيانات (Datapath) ووحدة التحكم (Control Unit) جزء من طبقة البرمجيات (Software layer).",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "The datapath and control unit are hardware components within the CPU/processor.",
+            "correction_ar": "مسار البيانات ووحدة التحكم مكوّنات عتادية (Hardware) داخل المعالج/وحدة المعالجة.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 11
+              },
+              {
+                "file": "chapter 3-2025.pdf",
+                "page": 5
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "statement_en": "Data storage is not essential for computer operation.",
+            "statement_ar": "تخزين البيانات ليس ضرورياً لعمل الحاسوب.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Data storage (memory) is an essential component of a computer system.",
+            "correction_ar": "تخزين البيانات (الذاكرة) مكوّن أساسي في نظام الحاسوب.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 5
+              },
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 16
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "statement_en": "Embedded system refers to the interconnection of everyday objects with the internet.",
+            "statement_ar": "النظام المضمن (Embedded system) يعني ترابط الأشياء اليومية مع الإنترنت.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "That description matches the Internet of Things (IoT); an embedded system is electronics and software within a product.",
+            "correction_ar": "هذا الوصف يخص إنترنت الأشياء (IoT)، أما النظام المضمن فهو إلكترونيات وبرمجيات داخل منتج.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 53
+              },
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 62
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "statement_en": "The MAR (Memory Address Register) holds the address of the current instruction being executed.",
+            "statement_ar": "المسجل MAR (Memory Address Register) يحتفظ بعنوان التعليمة الحالية التي يتم تنفيذها.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "MAR holds the address in memory for the next read/write operation; PC is used for the next instruction address in the instruction cycle.",
+            "correction_ar": "MAR يحتفظ بعنوان موقع الذاكرة لعملية القراءة/الكتابة التالية، بينما PC يرتبط بعنوان التعليمة التالية ضمن دورة التعليمة.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 35
+              },
+              {
+                "file": "chapter 3-2025.pdf",
+                "page": 9
+              }
+            ]
+          },
+          {
+            "no": 6,
+            "statement_en": "The address field in an instruction word specifies the memory address of the operand.",
+            "statement_ar": "حقل العنوان (Address field) في كلمة التعليمة يحدد عنوان الذاكرة للمعامل (Operand).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": "",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 34
+              }
+            ]
+          },
+          {
+            "no": 7,
+            "statement_en": "The ALU is responsible for fetching instructions from memory, decoding them, and executing them.",
+            "statement_ar": "وحدة الحساب والمنطق (ALU) مسؤولة عن جلب التعليمات من الذاكرة وفكّها وتنفيذها.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "The control unit handles instruction fetch and decode; the ALU performs arithmetic/logic operations during execution.",
+            "correction_ar": "وحدة التحكم تقوم بجلب التعليمة وفكها، بينما ALU تقوم بعمليات الحساب والمنطق أثناء التنفيذ.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 19
+              },
+              {
+                "file": "chapter 3-2025.pdf",
+                "page": 10
+              }
+            ]
+          },
+          {
+            "no": 8,
+            "statement_en": "Cloud computing provides shared resources, software, and information on-demand.",
+            "statement_ar": "الحوسبة السحابية توفر موارد مشتركة وبرمجيات ومعلومات عند الطلب (On-demand).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": "",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 64
+              }
+            ]
+          },
+          {
+            "no": 9,
+            "statement_en": "Software as a Service (SaaS) refers to the CSP providing a platform for developing and running applications.",
+            "statement_ar": "البرمجيات كخدمة (SaaS) تعني أن مزود الخدمة السحابية يوفر منصة لتطوير وتشغيل التطبيقات.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "That description matches Platform as a Service (PaaS). SaaS provides complete software applications to the user over the internet.",
+            "correction_ar": "هذا الوصف يخص منصة كخدمة (PaaS). أما SaaS فتقدم تطبيقات برمجية جاهزة للمستخدم عبر الإنترنت.",
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 64
+              }
+            ]
+          }
+        ],
+        "essay": [
+          {
+            "no": 1,
+            "question_en": "Write the distinction between computer organization and computer architecture. Explain at least TWO characteristics of each.",
+            "question_ar": "اكتب الفرق بين تنظيم الحاسوب ومعمارية الحاسوب. اشرح على الأقل خاصيتين لكلٍ منهما.",
+            "answer_points_en": [
+              "Architecture: programmer-visible attributes such as instruction set, number of bits used for data types, I/O mechanisms, and memory addressing techniques.",
+              "Organization: operational units and their interconnections that realize architectural specifications (e.g., control signals, interfaces, memory technology used).",
+              "Example characteristics: Architecture is designed first and focuses on purpose; Organization comes after architecture and focuses on performance/implementation."
+            ],
+            "answer_points_ar": [
+              "المعمارية: خصائص مرئية للمبرمج مثل مجموعة التعليمات، عدد البتات لأنواع البيانات، آليات الإدخال/الإخراج، وتقنيات عنونة الذاكرة.",
+              "التنظيم: الوحدات التشغيلية وترابطها لتحقيق مواصفات المعمارية (مثل إشارات التحكم، الواجهات، وتقنية الذاكرة المستخدمة).",
+              "خصائص/مقارنة: المعمارية تُصمَّم أولاً وتركّز على الهدف (Purpose)، بينما التنظيم يأتي بعد تثبيت المعمارية ويركّز على الأداء والتنفيذ."
+            ],
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 9
+              },
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 10
+              }
+            ]
+          },
+          {
+            "no": 2,
+            "question_en": "What is performance balance? Explain it briefly.",
+            "question_ar": "ما هو توازن الأداء (Performance balance)؟ اشرحه بإيجاز.",
+            "answer_points_en": [
+              "Different components operate at different speeds (e.g., DRAM is much slower than the processor).",
+              "System designers adjust organization/architecture to compensate for mismatches.",
+              "Overall balance matters more than raw performance of a single component; benchmarks compare system performance."
+            ],
+            "answer_points_ar": [
+              "مكوّنات النظام تعمل بسرعات مختلفة (مثلاً DRAM أبطأ من المعالج).",
+              "لذلك يجب تعديل التنظيم/المعمارية لتعويض عدم التوافق في السرعات.",
+              "التوازن العام في النظام أهم من الأداء الخام لمكوّن واحد؛ وتُستخدم الاختبارات المعيارية (Benchmarks) للمقارنة."
+            ],
+            "support": [
+              {
+                "file": "chapter 2-2025.pdf",
+                "page": 11
+              }
+            ]
+          },
+          {
+            "no": 3,
+            "question_en": "Explain cloud computing and list FOUR features of cloud computing.",
+            "question_ar": "اشرح الحوسبة السحابية واذكر أربع خصائص/مميزات للحوسبة السحابية.",
+            "answer_points_en": [
+              "Cloud computing: internet-based computing that provides shared resources, software, and information on-demand.",
+              "Features (commonly accepted): on-demand self-service; broad network access; resource pooling/shared infrastructure; rapid elasticity/scalability."
+            ],
+            "answer_points_ar": [
+              "الحوسبة السحابية: حوسبة عبر الإنترنت توفر موارد مشتركة وبرمجيات ومعلومات عند الطلب.",
+              "خصائص (شائعة): خدمة ذاتية عند الطلب؛ وصول شبكي واسع؛ تجميع الموارد/بنية مشتركة؛ مرونة/قابلية توسّع سريعة."
+            ],
+            "support": [
+              {
+                "file": "chapter 1-2025.pdf",
+                "page": 64
+              }
+            ]
+          },
+          {
+            "no": 4,
+            "question_en": "List and briefly define THREE types of control lines.",
+            "question_ar": "اذكر وعرّف بإيجاز ثلاثة أنواع من خطوط التحكم (Control lines).",
+            "answer_points_en": [
+              "Memory read: causes data from the addressed memory location to be placed on the bus.",
+              "Memory write: causes data on the bus to be written into the addressed location.",
+              "Interrupt request: indicates that an interrupt is pending (or Bus request: module requests control of the bus)."
+            ],
+            "answer_points_ar": [
+              "قراءة الذاكرة (Memory read): يجعل البيانات من موقع الذاكرة المعنون تُوضع على الناقل (Bus).",
+              "كتابة الذاكرة (Memory write): يجعل البيانات على الناقل تُكتب في موقع الذاكرة المعنون.",
+              "طلب مقاطعة (Interrupt request): يشير إلى وجود مقاطعة معلّقة (أو طلب الناقل Bus request لطلب التحكم بالناقل)."
+            ],
+            "support": [
+              {
+                "file": "chapter 3-2025.pdf",
+                "page": 36
+              },
+              {
+                "file": "chapter 3-2025.pdf",
+                "page": 37
+              }
+            ]
+          },
+          {
+            "no": 5,
+            "question_en": "Explain the concept of memory hierarchy and why it is used.",
+            "question_ar": "اشرح مفهوم هرمية الذاكرة (Memory hierarchy) ولماذا تُستخدم.",
+            "answer_points_en": [
+              "There is a trade-off among capacity, access time, and cost (how much, how fast, how expensive).",
+              "Memory hierarchy uses multiple levels of storage: small/fast/expensive near CPU and larger/slower/cheaper farther away.",
+              "Goal: keep frequently accessed data high in the hierarchy for fast access, and less-used data lower."
+            ],
+            "answer_points_ar": [
+              "هناك مفاضلة بين السعة وزمن الوصول والتكلفة (كم، كم هو سريع، كم هو مكلف).",
+              "هرمية الذاكرة تستخدم مستويات متعددة: صغيرة/سريعة/مكلفة قرب المعالج وأكبر/أبطأ/أرخص بعيداً.",
+              "الهدف: إبقاء البيانات كثيرة الاستخدام في أعلى الهرم للوصول السريع، والأقل استخداماً في الأسفل."
+            ],
+            "support": [
+              {
+                "file": "chapter 4-2025.pdf",
+                "page": 12
+              },
+              {
+                "file": "chapter 4-2025.pdf",
+                "page": 13
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "generated_question_bank_from_chapters": {
+    "description_en": "Exam-style question bank (True/False + Essay) generated from chapter slides 1–5, ordered by chapter.",
+    "description_ar": "بنك أسئلة بنمط الاختبار (صح/خطأ + مقالي) مُولّد من شرائح المحاضرات (الفصول 1–5) وبالترتيب حسب الفصل.",
+    "chapters": [
+      {
+        "chapter_id": 1,
+        "chapter_title_en": "Computer Organization and Architecture Basics + Computer Evolution",
+        "chapter_title_ar": "أساسيات تنظيم ومعمارية الحاسوب + تطور الحواسيب",
+        "source_file": "chapter 1-2025.pdf",
+        "pages_total": 67,
+        "true_false": [
+          {
+            "id": "Ch1_TF_01",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 5
+            },
+            "statement_en": "A computer has three key components: computation, communication, and storage (memory).",
+            "statement_ar": "يتكوّن الحاسوب من ثلاثة مكوّنات أساسية: المعالجة (Computation)، الاتصال/التواصل (Communication)، والتخزين (الذاكرة).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_02",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 6
+            },
+            "statement_en": "In the von Neumann architecture, the program is stored in memory during execution.",
+            "statement_ar": "في معمارية فون نيومان يتم تخزين البرنامج في الذاكرة أثناء التنفيذ.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_03",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 6
+            },
+            "statement_en": "Von Neumann architecture executes program instructions sequentially (unless modified).",
+            "statement_ar": "معمارية فون نيومان تنفّذ التعليمات بشكل تسلسلي (إلا إذا تم تعديل التسلسل بشكل صريح).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_04",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 6
+            },
+            "statement_en": "A von Neumann computer consists of three subsystems: memory, ALU, and I/O only.",
+            "statement_ar": "حاسوب فون نيومان يتكوّن من ثلاثة أنظمة فرعية فقط: الذاكرة و ALU و I/O.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "A von Neumann computer consists of four main subsystems: memory, ALU, control unit, and I/O.",
+            "correction_ar": "حاسوب فون نيومان يتكوّن من أربعة أنظمة فرعية رئيسية: الذاكرة، و ALU، ووحدة التحكم، و I/O."
+          },
+          {
+            "id": "Ch1_TF_05",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 8
+            },
+            "statement_en": "The system bus includes the control bus, address bus, and data bus.",
+            "statement_ar": "ناقل النظام (System bus) يتكوّن من: ناقل التحكم، ناقل العناوين، وناقل البيانات.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_06",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 9
+            },
+            "statement_en": "The instruction set is an organizational attribute.",
+            "statement_ar": "مجموعة التعليمات (Instruction set) من خصائص التنظيم (Organization).",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "The instruction set is an architectural attribute (programmer-visible).",
+            "correction_ar": "مجموعة التعليمات من خصائص المعمارية (Architecture) لأنها مرئية للمبرمج."
+          },
+          {
+            "id": "Ch1_TF_07",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 9
+            },
+            "statement_en": "Memory technology used is listed as an organizational attribute.",
+            "statement_ar": "تقنية الذاكرة المستخدمة تُذكر كخاصية تنظيمية (Organizational attribute).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_08",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 14
+            },
+            "statement_en": "Structure is the operation of each individual component as part of the overall system.",
+            "statement_ar": "البنية (Structure) هي عمل كل مكوّن بشكل فردي ضمن النظام.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Structure is the way components are interrelated; function is the operation of each component.",
+            "correction_ar": "البنية هي طريقة ترابط المكوّنات، أما الوظيفة فهي عمل كل مكوّن."
+          },
+          {
+            "id": "Ch1_TF_09",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 16
+            },
+            "statement_en": "Control is one of the four basic computer functions and it manages the computer’s resources.",
+            "statement_ar": "التحكم (Control) إحدى وظائف الحاسوب الأساسية الأربع وهو يدير موارد الحاسوب.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_10",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 18
+            },
+            "statement_en": "The main memory module moves data between the computer and its external environment.",
+            "statement_ar": "وحدة الذاكرة الرئيسية تنقل البيانات بين الحاسوب وبيئته الخارجية.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "The I/O subsystem moves data between the computer and its external environment; main memory stores data and programs.",
+            "correction_ar": "نظام الإدخال/الإخراج هو الذي ينقل البيانات بين الحاسوب والبيئة الخارجية، بينما الذاكرة الرئيسية تخزّن البيانات والبرامج."
+          },
+          {
+            "id": "Ch1_TF_11",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 19
+            },
+            "statement_en": "The CPU consists of the control unit, ALU, registers, and an internal bus.",
+            "statement_ar": "تتكوّن وحدة المعالجة المركزية من: وحدة التحكم، وALU، والسجلات، وناقل داخلي.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_12",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 20
+            },
+            "statement_en": "A processor is a physical piece of silicon containing one or more cores.",
+            "statement_ar": "المعالج (Processor) هو قطعة سيليكون مادية تحتوي نواة واحدة أو أكثر.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_13",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 24
+            },
+            "statement_en": "Cache memory is smaller and faster than main memory and is used to speed up memory accesses.",
+            "statement_ar": "ذاكرة الكاش أصغر وأسرع من الذاكرة الرئيسية وتُستخدم لتسريع الوصول إلى الذاكرة.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_14",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 29
+            },
+            "statement_en": "The first generation of computers (1946–1957) used transistors as the main hardware technology.",
+            "statement_ar": "الجيل الأول من الحواسيب (1946–1957) استخدم الترانزستورات كتقنية عتادية رئيسية.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "The first generation used vacuum tubes; transistors characterize the second generation.",
+            "correction_ar": "الجيل الأول استخدم الأنابيب المفرغة (Vacuum tubes)، أما الترانزستورات فهي للجيل الثاني."
+          },
+          {
+            "id": "Ch1_TF_15",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 38
+            },
+            "statement_en": "High-level programming languages were introduced in the second generation of computers.",
+            "statement_ar": "اللغات عالية المستوى تم إدخالها في الجيل الثاني من الحواسيب.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_16",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 41
+            },
+            "statement_en": "A memory cell is a device that stores a single bit (0 or 1).",
+            "statement_ar": "خلية الذاكرة هي جهاز يخزّن بِت واحد (0 أو 1).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_17",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 42
+            },
+            "statement_en": "Gates are used primarily for data storage, and memory cells are used for data processing.",
+            "statement_ar": "تُستخدم البوابات أساساً لتخزين البيانات، وتُستخدم خلايا الذاكرة لمعالجة البيانات.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Gates provide data processing (implement Boolean functions), while memory cells store data (bits).",
+            "correction_ar": "البوابات لمعالجة البيانات (تنفيذ الدوال المنطقية)، بينما خلايا الذاكرة لتخزين البيانات (بتات)."
+          },
+          {
+            "id": "Ch1_TF_18",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 46
+            },
+            "statement_en": "Moore’s Law observed that the number of transistors on a chip was doubling every year, later revised to about every 18 months.",
+            "statement_ar": "قانون مور لاحظ تضاعف عدد الترانزستورات على الشريحة كل سنة، ثم عُدّل ليصبح تقريباً كل 18 شهراً.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_19",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 48
+            },
+            "statement_en": "The Intel 4004 was the first chip to contain all of the CPU components on a single chip.",
+            "statement_ar": "Intel 4004 كانت أول شريحة تحتوي جميع مكوّنات الـ CPU على شريحة واحدة.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_20",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 53
+            },
+            "statement_en": "An embedded system refers to electronics and software within a product, as opposed to a general-purpose computer.",
+            "statement_ar": "النظام المضمن هو إلكترونيات وبرمجيات داخل منتج، بخلاف الحاسوب متعدد الأغراض.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_21",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 56
+            },
+            "statement_en": "In many embedded systems there is no human interface.",
+            "statement_ar": "في كثير من الأنظمة المضمنة لا توجد واجهة تفاعل بشرية.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_22",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 59
+            },
+            "statement_en": "A microcontroller is a single chip that contains the processor, ROM, RAM, a clock, and an I/O control unit.",
+            "statement_ar": "المتحكم الدقيق (Microcontroller) شريحة واحدة تحتوي المعالج وROM وRAM وساعة ووحدة تحكم I/O.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_23",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 62
+            },
+            "statement_en": "The Internet of Things (IoT) refers to the expanding interconnection of smart devices, ranging from appliances to tiny sensors.",
+            "statement_ar": "إنترنت الأشياء (IoT) يشير إلى التوسع في ترابط الأجهزة الذكية من الأجهزة المنزلية إلى الحساسات الصغيرة.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch1_TF_24",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 64
+            },
+            "statement_en": "Cloud computing provides shared resources, software, and information on-demand, like the electricity grid.",
+            "statement_ar": "الحوسبة السحابية توفر موارد مشتركة وبرمجيات ومعلومات عند الطلب، مثل شبكة الكهرباء.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          }
+        ],
+        "essay": [
+          {
+            "id": "Ch1_ES_01",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 2
+            },
+            "question_en": "Why are we studying Computer Organization? Mention the programmer’s view and the hardware designer’s view.",
+            "question_ar": "لماذا ندرس تنظيم الحاسوب؟ اذكر منظور المبرمج ومنظور مصمم العتاد.",
+            "answer_points_en": [
+              "To understand what happens “in-between” the problem/algorithm and the hardware execution.",
+              "Programmer’s view: focus on writing programs efficiently (performance, correct behavior).",
+              "Hardware designer’s view: focus on designing computers using logic gates and digital logic models to achieve desired behavior."
+            ],
+            "answer_points_ar": [
+              "لفهم ما يحدث “في الوسط” بين المشكلة/الخوارزمية وبين التنفيذ على العتاد.",
+              "منظور المبرمج: التركيز على كتابة البرامج بكفاءة (أداء/صحة التنفيذ).",
+              "منظور مصمم العتاد: تصميم الحاسوب باستخدام البوابات المنطقية ونموذج المنطق الرقمي لتحقيق السلوك المطلوب."
+            ]
+          },
+          {
+            "id": "Ch1_ES_02",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 6
+            },
+            "question_en": "List the main characteristics of the von Neumann architecture mentioned in the slides.",
+            "question_ar": "اذكر الخصائص الرئيسية لمعمارية فون نيومان المذكورة في الشرائح.",
+            "answer_points_en": [
+              "A computer consists of four main subsystems: memory, ALU, control unit, and I/O.",
+              "The program is stored in memory during execution (stored-program concept).",
+              "Instructions are executed sequentially (unless the sequence is explicitly modified)."
+            ],
+            "answer_points_ar": [
+              "يتكون الحاسوب من أربعة أنظمة فرعية: الذاكرة، وALU، ووحدة التحكم، وI/O.",
+              "تخزين البرنامج في الذاكرة أثناء التنفيذ (Stored-program).",
+              "تنفيذ التعليمات تسلسلياً (إلا إذا تم تعديل التسلسل)."
+            ]
+          },
+          {
+            "id": "Ch1_ES_03",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 9
+            },
+            "question_en": "Differentiate between computer architecture and computer organization using the attributes shown.",
+            "question_ar": "ميّز بين معمارية الحاسوب وتنظيم الحاسوب باستخدام الخصائص المعروضة.",
+            "answer_points_en": [
+              "Architecture (programmer-visible): instruction set, number of bits for data types, I/O mechanisms, memory addressing techniques.",
+              "Organization (implementation): control signals, interfaces, memory technology used."
+            ],
+            "answer_points_ar": [
+              "المعمارية (مرئية للمبرمج): مجموعة التعليمات، عدد البتات لأنواع البيانات، آليات الإدخال/الإخراج، تقنيات عنونة الذاكرة.",
+              "التنظيم (تنفيذ/تركيب): إشارات التحكم، الواجهات، تقنية الذاكرة المستخدمة."
+            ]
+          },
+          {
+            "id": "Ch1_ES_04",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 10
+            },
+            "question_en": "Compare architecture vs organization in terms of purpose, target, design, actors, and order (as in the slide).",
+            "question_ar": "قارن بين Architecture و Organization من حيث: الهدف (Purpose)، المستهدف (Target)، التصميم (Design)، الفاعلون (Actors)، والترتيب (Order).",
+            "answer_points_en": [
+              "Purpose: Architecture—what the computer should do; Organization—how the computer works.",
+              "Target: Architecture—programmer; Organization—how units and components interact.",
+              "Design: Architecture—gives ideas for architectural design; Organization—gives ideas for structural design.",
+              "Actors: Architecture—hardware parts; Organization—performance.",
+              "Order: Architecture is designed first; organization starts after finalizing architecture."
+            ],
+            "answer_points_ar": [
+              "الهدف: Architecture ماذا يجب أن يفعل الحاسوب؛ Organization كيف يعمل الحاسوب.",
+              "المستهدف: Architecture المبرمج؛ Organization تفاعل الوحدات والمكوّنات.",
+              "التصميم: Architecture أفكار التصميم المعماري؛ Organization أفكار التصميم البنيوي.",
+              "الفاعلون: Architecture أجزاء العتاد؛ Organization الأداء.",
+              "الترتيب: تُصمَّم المعمارية أولاً، ثم يبدأ التنظيم بعد تثبيت المعمارية."
+            ]
+          },
+          {
+            "id": "Ch1_ES_05",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 14
+            },
+            "question_en": "Define computer structure and computer function.",
+            "question_ar": "عرّف بنية الحاسوب (Structure) ووظيفة الحاسوب (Function).",
+            "answer_points_en": [
+              "Structure: the way in which the components are interrelated.",
+              "Function: the operation of each individual component as part of the structure."
+            ],
+            "answer_points_ar": [
+              "البنية: طريقة ترابط المكوّنات معاً.",
+              "الوظيفة: عمل كل مكوّن بشكل فردي كجزء من البنية."
+            ]
+          },
+          {
+            "id": "Ch1_ES_06",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 16
+            },
+            "question_en": "List the four basic functions of a computer mentioned in the slides.",
+            "question_ar": "اذكر الوظائف الأساسية الأربع للحاسوب المذكورة في الشرائح.",
+            "answer_points_en": [
+              "Data processing",
+              "Data storage (short-term and long-term)",
+              "Data movement (I/O and data communications)",
+              "Control (manages resources)"
+            ],
+            "answer_points_ar": [
+              "معالجة البيانات (Data processing)",
+              "تخزين البيانات (قصير وطويل المدى)",
+              "نقل البيانات (إدخال/إخراج واتصالات بيانات)",
+              "التحكم (إدارة الموارد)"
+            ]
+          },
+          {
+            "id": "Ch1_ES_07",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 20
+            },
+            "question_en": "In a multicore computer, define CPU, core, processor, and multicore processor.",
+            "question_ar": "في الحاسوب متعدد الأنوية، عرّف: CPU و Core و Processor و Multicore processor.",
+            "answer_points_en": [
+              "CPU: the functional unit that interprets and executes instructions.",
+              "Core: a functional unit that can independently execute programs on behalf of the operating system.",
+              "Processor: a physical piece of silicon containing one or more cores.",
+              "Multicore processor: a single chip with multiple processor cores."
+            ],
+            "answer_points_ar": [
+              "CPU: وحدة وظيفية تفسّر التعليمات وتنفّذها.",
+              "Core: وحدة وظيفية تستطيع تنفيذ برامج بشكل مستقل لصالح نظام التشغيل.",
+              "Processor: قطعة سيليكون تحتوي على نواة واحدة أو أكثر.",
+              "Multicore processor: شريحة واحدة تحتوي عدة أنوية معالجة."
+            ]
+          },
+          {
+            "id": "Ch1_ES_08",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 31
+            },
+            "question_en": "Describe the main modules of the IAS computer structure (as shown).",
+            "question_ar": "اشرح الوحدات الرئيسية في بنية حاسوب IAS (كما في الشكل).",
+            "answer_points_en": [
+              "Main memory: stores data and instructions (words).",
+              "ALU: performs arithmetic/logic; includes AC and MQ registers in IAS context.",
+              "Control unit: interprets instructions and causes them to be executed; includes IR, IBR, PC, MAR, MBR.",
+              "I/O equipment: transfers data between the computer and external environment."
+            ],
+            "answer_points_ar": [
+              "الذاكرة الرئيسية: تخزن البيانات والتعليمات (كلمات).",
+              "وحدة الحساب والمنطق: تنفّذ عمليات الحساب والمنطق؛ وتتضمن سجلات مثل AC و MQ في IAS.",
+              "وحدة التحكم: تفسّر التعليمات وتسبب تنفيذها؛ وتتضمن IR و IBR و PC و MAR و MBR.",
+              "معدات الإدخال/الإخراج: تنقل البيانات بين الحاسوب والبيئة الخارجية."
+            ]
+          },
+          {
+            "id": "Ch1_ES_09",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 56
+            },
+            "question_en": "List at least four differences between general-purpose computers and embedded systems (based on the slide).",
+            "question_ar": "اذكر على الأقل 4 فروقات بين الحاسوب متعدد الأغراض والنظام المضمن (حسب الشريحة).",
+            "answer_points_en": [
+              "Embedded systems may have simple or no human interface.",
+              "Embedded systems may have a real-time operating system.",
+              "Embedded systems often have a diagnostic port.",
+              "Embedded systems may have fixed function software rather than being general-purpose.",
+              "Embedded systems are often optimized for cost, power, and size; may not be user-upgradeable."
+            ],
+            "answer_points_ar": [
+              "قد تكون واجهة التفاعل البشرية في النظام المضمن بسيطة أو غير موجودة.",
+              "قد يستخدم النظام المضمن نظام تشغيل حقيقي الزمن (Real-time OS).",
+              "قد يحتوي النظام المضمن على منفذ تشخيص (Diagnostic port).",
+              "برنامج النظام المضمن قد يكون ذا وظيفة ثابتة وليس عاماً.",
+              "الأنظمة المضمنة تُحسّن للتكلفة والطاقة والحجم وغالباً ليست قابلة للترقية للمستخدم."
+            ]
+          },
+          {
+            "id": "Ch1_ES_10",
+            "source": {
+              "file": "chapter 1-2025.pdf",
+              "page": 64
+            },
+            "question_en": "Define cloud computing as given in the slides.",
+            "question_ar": "عرّف الحوسبة السحابية كما وردت في الشرائح.",
+            "answer_points_en": [
+              "Internet-based computing that provides shared resources, software, and information on-demand, like the electricity grid."
+            ],
+            "answer_points_ar": [
+              "حوسبة عبر الإنترنت توفر موارد مشتركة وبرمجيات ومعلومات عند الطلب، مثل شبكة الكهرباء."
+            ]
+          }
+        ]
+      },
+      {
+        "chapter_id": 2,
+        "chapter_title_en": "Performance Issues and Contemporary Processor Design",
+        "chapter_title_ar": "قضايا الأداء وتصميم المعالجات الحديثة",
+        "source_file": "chapter 2-2025.pdf",
+        "pages_total": 19,
+        "true_false": [
+          {
+            "id": "Ch2_TF_01",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 2
+            },
+            "statement_en": "Many desktop applications (e.g., image processing and 3D rendering) require high-performance processors.",
+            "statement_ar": "العديد من تطبيقات الحاسوب المكتبي (مثل معالجة الصور والرسم ثلاثي الأبعاد) تحتاج معالجات عالية الأداء.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch2_TF_02",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 3
+            },
+            "statement_en": "Due to Moore’s Law, chipmakers can deliver a new generation every three years with about four times as many transistors.",
+            "statement_ar": "بسبب قانون مور يمكن لمصنّعي الشرائح إصدار جيل جديد كل 3 سنوات تقريباً مع حوالي 4 أضعاف عدد الترانزستورات.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch2_TF_03",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 4
+            },
+            "statement_en": "Pipelining reduces the execution time of each individual instruction.",
+            "statement_ar": "الـ Pipelining يقلّل زمن تنفيذ كل تعليمة بشكل فردي.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Pipelining does not change the time for an individual instruction; it reduces the total time for a program by overlapping stages.",
+            "correction_ar": "الـ Pipelining لا يقلّل زمن التعليمة الواحدة؛ لكنه يقلّل الزمن الكلي للبرنامج عبر تراكب المراحل."
+          },
+          {
+            "id": "Ch2_TF_04",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 4
+            },
+            "statement_en": "The key benefit of pipelining is increased throughput by overlapping stages of successive instructions.",
+            "statement_ar": "الفائدة الأساسية من الـ Pipelining هي زيادة الإنتاجية (Throughput) عبر تراكب مراحل تعليمات متتالية.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch2_TF_05",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 7
+            },
+            "statement_en": "Superscalar execution issues multiple independent instructions per clock cycle by using multiple parallel pipelines.",
+            "statement_ar": "التنفيذ الفائق (Superscalar) يصدر عدة تعليمات مستقلة في كل دورة ساعة باستخدام خطوط أنابيب متوازية.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch2_TF_06",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 9
+            },
+            "statement_en": "Branch prediction improves the flow of instructions through an instruction pipeline.",
+            "statement_ar": "التنبؤ بالتفرع (Branch prediction) يحسن انسياب التعليمات عبر خط الأنابيب.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch2_TF_07",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 9
+            },
+            "statement_en": "If branch prediction is wrong, the processor keeps the speculatively fetched/executed instructions with no penalty.",
+            "statement_ar": "إذا كان التنبؤ بالتفرع خاطئاً، يحتفظ المعالج بالتعليمات المنفّذة بشكل تخميني دون عقوبة.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "If prediction is wrong, the partially processed instructions must be discarded and the pipeline starts over, which delays execution.",
+            "correction_ar": "عند الخطأ تُهمل التعليمات التي تمت معالجتها جزئياً ويبدأ خط الأنابيب من جديد مما يسبب تأخيراً."
+          },
+          {
+            "id": "Ch2_TF_08",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 10
+            },
+            "statement_en": "Speculative execution executes instructions ahead of time using branch prediction and holds results temporarily until they are confirmed.",
+            "statement_ar": "التنفيذ التخميني (Speculative execution) ينفّذ تعليمات مسبقاً باستخدام التنبؤ بالتفرع ويحتفظ بالنتائج مؤقتاً حتى يتم التأكد منها.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch2_TF_09",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 11
+            },
+            "statement_en": "Performance balance means that overall system balance is more important than maximizing raw performance of a single component.",
+            "statement_ar": "توازن الأداء يعني أن توازن النظام ككل أهم من تعظيم أداء مكوّن واحد فقط.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch2_TF_10",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 11
+            },
+            "statement_en": "DRAM memory systems are significantly faster than the processor.",
+            "statement_ar": "ذاكرة DRAM أسرع بكثير من المعالج.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "DRAM memory systems are significantly slower than the processor, creating a mismatch.",
+            "correction_ar": "ذاكرة DRAM أبطأ بكثير من المعالج وهذا يسبب عدم توازن."
+          },
+          {
+            "id": "Ch2_TF_11",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 12
+            },
+            "statement_en": "A cache-based memory hierarchy reduces the frequency of main memory accesses and helps overcome processor–memory imbalance.",
+            "statement_ar": "هرمية الذاكرة المبنية على الكاش تقلّل تكرار الوصول للذاكرة الرئيسية وتساعد في معالجة عدم توازن المعالج والذاكرة.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch2_TF_12",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 14
+            },
+            "statement_en": "Increasing clock speed and logic density can increase power density, making heat dissipation a serious problem.",
+            "statement_ar": "زيادة تردد الساعة وكثافة المنطق قد ترفع كثافة الطاقة مما يجعل تبديد الحرارة مشكلة خطيرة.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch2_TF_13",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 15
+            },
+            "statement_en": "RC delay is the delay caused by the resistance and capacitance of circuit wiring.",
+            "statement_ar": "تأخير RC هو تأخير ناتج عن مقاومة وسعة أسلاك/توصيلات الدائرة.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch2_TF_14",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 16
+            },
+            "statement_en": "A contemporary approach to performance improvement includes multicore systems, many integrated core (MIC) systems, and GPU systems.",
+            "statement_ar": "من الاتجاهات الحديثة لتحسين الأداء: الأنظمة متعددة الأنوية، وMIC، وأنظمة GPU.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch2_TF_15",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 18
+            },
+            "statement_en": "A GPU strategy consists of a homogeneous collection of general-purpose processors only.",
+            "statement_ar": "استراتيجية GPU تتكوّن فقط من مجموعة متجانسة من المعالجات العامة.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "A GPU-based chip includes general-purpose processors plus GPUs and other specialized cores (for repetitive computations).",
+            "correction_ar": "شريحة GPU قد تحتوي معالجات عامة بالإضافة إلى وحدات رسومية ونوى متخصصة للحسابات المتكررة."
+          },
+          {
+            "id": "Ch2_TF_16",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 19
+            },
+            "statement_en": "Clock speed is measured in cycles per second (Hertz).",
+            "statement_ar": "سرعة الساعة (Clock speed) تُقاس بعدد الدورات في الثانية (هرتز).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          }
+        ],
+        "essay": [
+          {
+            "id": "Ch2_ES_01",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 3
+            },
+            "question_en": "List the techniques built into contemporary processors to increase performance.",
+            "question_ar": "اذكر التقنيات المدمجة في المعالجات الحديثة لزيادة الأداء.",
+            "answer_points_en": [
+              "Pipelining",
+              "Superscalar execution",
+              "Branch prediction",
+              "Speculative execution",
+              "Data flow analysis"
+            ],
+            "answer_points_ar": [
+              "خط الأنابيب (Pipelining)",
+              "التنفيذ الفائق (Superscalar execution)",
+              "التنبؤ بالتفرع (Branch prediction)",
+              "التنفيذ التخميني (Speculative execution)",
+              "تحليل تدفق البيانات (Data flow analysis)"
+            ]
+          },
+          {
+            "id": "Ch2_ES_02",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 4
+            },
+            "question_en": "Explain pipelining and state its main performance effect (as described).",
+            "question_ar": "اشرح الـ Pipelining واذكر تأثيره الأساسي على الأداء (حسب الشرح).",
+            "answer_points_en": [
+              "Pipelining divides instruction execution into stages and overlaps those stages for successive instructions.",
+              "It increases throughput and reduces the total time to execute a sequence of instructions (program), even though a single instruction’s time is not reduced."
+            ],
+            "answer_points_ar": [
+              "الـ Pipelining يقسم تنفيذ التعليمة إلى مراحل ويُداخل/يُراكب هذه المراحل بين تعليمات متتالية.",
+              "يزيد الإنتاجية ويقلل الزمن الكلي لتنفيذ مجموعة تعليمات (برنامج)، رغم أن زمن التعليمة الواحدة لا ينخفض."
+            ]
+          },
+          {
+            "id": "Ch2_ES_03",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 11
+            },
+            "question_en": "What is performance balance and why are benchmarks used?",
+            "question_ar": "ما هو توازن الأداء ولماذا تُستخدم الاختبارات المعيارية (Benchmarks)؟",
+            "answer_points_en": [
+              "Performance balance: overall system balance is more important than raw speed of a single component; designers compensate for speed mismatches (e.g., CPU vs DRAM).",
+              "Benchmarks are used to compare and evaluate overall system performance in a measurable way."
+            ],
+            "answer_points_ar": [
+              "توازن الأداء: توازن النظام ككل أهم من سرعة مكوّن واحد؛ ويُعوِّض المصممون اختلاف السرعات (مثل المعالج مقابل DRAM).",
+              "تُستخدم الاختبارات المعيارية لقياس ومقارنة أداء الأنظمة بشكل موضوعي."
+            ]
+          },
+          {
+            "id": "Ch2_ES_04",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 12
+            },
+            "question_en": "List approaches mentioned to overcome the imbalance between processor speed and memory speed.",
+            "question_ar": "اذكر الأساليب المذكورة للتغلب على عدم توازن سرعة المعالج وسرعة الذاكرة.",
+            "answer_points_en": [
+              "Use wider DRAMs and a wider system bus.",
+              "Reduce the frequency of memory access using cache structures and memory hierarchy.",
+              "Increase interconnection bandwidth and use faster buses.",
+              "Improve DRAM interface and main memory structures."
+            ],
+            "answer_points_ar": [
+              "استخدام DRAM أعرض وناقل نظام أعرض.",
+              "تقليل تكرار الوصول للذاكرة باستخدام الكاش وهرمية الذاكرة.",
+              "زيادة عرض نطاق الترابط واستخدام نواقل أسرع.",
+              "تحسين واجهة DRAM وبُنى الذاكرة الرئيسية."
+            ]
+          },
+          {
+            "id": "Ch2_ES_05",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 15
+            },
+            "question_en": "List the problems associated with increasing clock speed and logic density.",
+            "question_ar": "اذكر المشاكل المرتبطة بزيادة سرعة الساعة وكثافة المنطق.",
+            "answer_points_en": [
+              "Power and heat dissipation (power density increases).",
+              "RC delay in circuit wiring becomes significant.",
+              "Memory latency still limits performance."
+            ],
+            "answer_points_ar": [
+              "الطاقة وتبديد الحرارة (ارتفاع كثافة الطاقة).",
+              "تأخير RC في توصيلات الدائرة.",
+              "زمن تأخر الذاكرة (Memory latency) يظل عائقاً للأداء."
+            ]
+          },
+          {
+            "id": "Ch2_ES_06",
+            "source": {
+              "file": "chapter 2-2025.pdf",
+              "page": 16
+            },
+            "question_en": "Differentiate between multicore systems, MIC systems, and GPU systems (as described).",
+            "question_ar": "ميّز بين Multicore و MIC و GPU (حسب الشرح).",
+            "answer_points_en": [
+              "Multicore: multiple general-purpose processor cores on a single chip (often with a shared cache).",
+              "MIC: a large number of homogeneous general-purpose cores; provides big parallelism but has software challenges.",
+              "GPU: a chip that includes general-purpose processors plus GPUs/specialized cores; excels at repetitive computations (graphics/video)."
+            ],
+            "answer_points_ar": [
+              "Multicore: عدة أنوية معالجة عامة على شريحة واحدة (غالباً مع كاش مشترك).",
+              "MIC: عدد كبير من الأنوية العامة المتجانسة؛ توازي عالٍ مع تحديات برمجية.",
+              "GPU: شريحة تضم معالجات عامة بالإضافة إلى وحدات رسومية/نوى متخصصة؛ قوية في الحسابات المتكررة والرسوميات/الفيديو."
+            ]
+          }
+        ]
+      },
+      {
+        "chapter_id": 3,
+        "chapter_title_en": "Top-Level View of Computer Function and Interconnection",
+        "chapter_title_ar": "منظور علوي لوظائف الحاسوب والترابط (Interconnection)",
+        "source_file": "chapter 3-2025.pdf",
+        "pages_total": 39,
+        "true_false": [
+          {
+            "id": "Ch3_TF_01",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 2
+            },
+            "statement_en": "In von Neumann architecture, data and instructions are stored in a single read-write memory.",
+            "statement_ar": "في معمارية فون نيومان تُخزَّن البيانات والتعليمات في ذاكرة واحدة للقراءة/الكتابة.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_02",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 2
+            },
+            "statement_en": "In von Neumann systems, memory is addressable by location without regard to the type of data contained there.",
+            "statement_ar": "في نظام فون نيومان يمكن عنونة الذاكرة حسب الموقع بغض النظر عن نوع البيانات المخزنة.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_03",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 2
+            },
+            "statement_en": "Execution occurs sequentially unless explicitly modified.",
+            "statement_ar": "يحدث التنفيذ بشكل تسلسلي ما لم يتم تعديله بشكل صريح.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_04",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 4
+            },
+            "statement_en": "Programming in hardware means supplying a new set of control signals rather than rewiring the computer.",
+            "statement_ar": "البرمجة بالعتاد تعني تزويد مجموعة جديدة من إشارات التحكم بدلاً من إعادة توصيل الحاسوب.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Supplying a new set of control signals is programming in software; programming in hardware requires rewiring for each new program.",
+            "correction_ar": "تزويد إشارات تحكم جديدة هو برمجة بالبرمجيات؛ أما البرمجة بالعتاد فتتطلب إعادة توصيل/تغيير توصيلات العتاد لكل برنامج جديد."
+          },
+          {
+            "id": "Ch3_TF_05",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 5
+            },
+            "statement_en": "During program execution, programs and data reside in memory; disk is secondary storage.",
+            "statement_ar": "أثناء تشغيل البرنامج تكون البرامج والبيانات في الذاكرة؛ والقرص هو تخزين ثانوي.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_06",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 6
+            },
+            "statement_en": "The input module converts data and instructions into internal signals usable by the system.",
+            "statement_ar": "وحدة الإدخال تحوّل البيانات والتعليمات إلى إشارات داخلية يمكن للنظام استخدامها.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_07",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 7
+            },
+            "statement_en": "The MAR contains the data to be written into memory or the data last read.",
+            "statement_ar": "المسجل MAR يحتوي البيانات التي ستُكتب في الذاكرة أو آخر بيانات قُرئت.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "MAR specifies the memory address for the next read/write; MBR contains the data to be written or last read.",
+            "correction_ar": "MAR يحدد عنوان الذاكرة لعملية القراءة/الكتابة القادمة؛ أما MBR فهو الذي يحتوي البيانات المكتوبة أو آخر بيانات مقروءة."
+          },
+          {
+            "id": "Ch3_TF_08",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 7
+            },
+            "statement_en": "I/O buffer register (I/OBR) is used for exchange of data between an I/O module and the CPU.",
+            "statement_ar": "المسجل I/OBR يُستخدم لتبادل البيانات بين وحدة الإدخال/الإخراج والمعالج.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_09",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 10
+            },
+            "statement_en": "Instruction processing consists of two steps: fetch and execute.",
+            "statement_ar": "معالجة التعليمات تتكون من خطوتين: الجلب (Fetch) والتنفيذ (Execute).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_10",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 12
+            },
+            "statement_en": "The processor-memory category includes data being transferred from processor to memory or memory to processor.",
+            "statement_ar": "فئة (Processor-Memory) تشمل نقل البيانات من المعالج إلى الذاكرة أو من الذاكرة إلى المعالج.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_11",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 18
+            },
+            "statement_en": "Operand fetch (OF) means fetching an operand from memory or reading it from I/O.",
+            "statement_ar": "جلب المعامل (Operand fetch) يعني جلب معامل من الذاكرة أو قراءته من I/O.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_12",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 19
+            },
+            "statement_en": "Instruction address calculation (IAC) typically increments the address of the previous instruction by a fixed amount.",
+            "statement_ar": "حساب عنوان التعليمة (IAC) عادة يزيد عنوان التعليمة السابقة بمقدار ثابت.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_13",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 20
+            },
+            "statement_en": "An interrupt requests the processor to suspend the current program, service the interrupt, and then resume.",
+            "statement_ar": "المقاطعة تطلب من المعالج إيقاف البرنامج الحالي مؤقتاً وخدمة المقاطعة ثم استئناف التنفيذ.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_14",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 22
+            },
+            "statement_en": "A timer interrupt is generated by an I/O controller.",
+            "statement_ar": "مقاطعة المؤقّت (Timer interrupt) يولدها متحكم I/O.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "A timer interrupt is generated by a timer within the processor (or CPU timing mechanism).",
+            "correction_ar": "مقاطعة المؤقّت يولدها المؤقّت داخل المعالج (أو آلية التوقيت في الـ CPU)."
+          },
+          {
+            "id": "Ch3_TF_15",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 27
+            },
+            "statement_en": "Direct Memory Access (DMA) allows I/O exchanges to occur directly with memory, relieving the processor.",
+            "statement_ar": "DMA يسمح بتبادل البيانات بين I/O والذاكرة مباشرة مما يخفف العبء عن المعالج.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_16",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 29
+            },
+            "statement_en": "Interconnection structures are the collection of paths connecting the various modules (CPU, memory, I/O).",
+            "statement_ar": "هياكل الترابط (Interconnection structures) هي مجموعة المسارات التي تربط الوحدات المختلفة (CPU، الذاكرة، I/O).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_17",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 32
+            },
+            "statement_en": "A bus is a shared transmission medium that connects two or more devices.",
+            "statement_ar": "الناقل (Bus) وسط نقل مشترك يربط جهازين أو أكثر.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_18",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 34
+            },
+            "statement_en": "The width of the data bus is a key factor in overall system performance.",
+            "statement_ar": "عرض ناقل البيانات عامل أساسي في أداء النظام ككل.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch3_TF_19",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 35
+            },
+            "statement_en": "The control bus designates the source or destination of data on the data bus.",
+            "statement_ar": "ناقل التحكم يحدد مصدر أو وجهة البيانات على ناقل البيانات.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "The address bus designates the source or destination of data on the data bus; the control bus carries control and timing signals.",
+            "correction_ar": "ناقل العناوين هو الذي يحدد مصدر/وجهة البيانات، أما ناقل التحكم فيحمل إشارات التحكم والتوقيت."
+          },
+          {
+            "id": "Ch3_TF_20",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 38
+            },
+            "statement_en": "Point-to-point interconnect provides higher data rate and better scalability than a shared bus.",
+            "statement_ar": "الترابط نقطة-إلى-نقطة (Point-to-point) يوفّر معدل بيانات أعلى وقابلية توسع أفضل من الناقل المشترك.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          }
+        ],
+        "essay": [
+          {
+            "id": "Ch3_ES_01",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 4
+            },
+            "question_en": "Explain programming in hardware vs programming in software (as described in the slide).",
+            "question_ar": "اشرح الفرق بين البرمجة بالعتاد (Hardware) والبرمجة بالبرمجيات (Software) كما ورد في الشريحة.",
+            "answer_points_en": [
+              "Programming in hardware: for each new program, the computer would need to be rewired (hardware control changes).",
+              "Programming in software: the program is in memory; to implement a new program you supply a new set of control signals (without rewiring)."
+            ],
+            "answer_points_ar": [
+              "البرمجة بالعتاد: لكل برنامج جديد قد يلزم إعادة توصيل/تغيير العتاد (تغيير التحكم العتادي).",
+              "البرمجة بالبرمجيات: البرنامج في الذاكرة؛ ولتنفيذ برنامج جديد نزوّد مجموعة جديدة من إشارات التحكم دون إعادة توصيل."
+            ]
+          },
+          {
+            "id": "Ch3_ES_02",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 6
+            },
+            "question_en": "List the major components of a computer (top-level) and state the role of each.",
+            "question_ar": "اذكر المكوّنات الرئيسية للحاسوب (منظور علوي) واذكر دور كل مكوّن.",
+            "answer_points_en": [
+              "CPU: instruction interpreter and ALU for arithmetic/logic operations.",
+              "Main memory: stores programs and data during execution.",
+              "I/O components: modules that handle input and output with external devices (and secondary storage)."
+            ],
+            "answer_points_ar": [
+              "CPU: يفسّر التعليمات ويحتوي ALU لعمليات الحساب والمنطق.",
+              "الذاكرة الرئيسية: تخزّن البرامج والبيانات أثناء التنفيذ.",
+              "مكوّنات I/O: وحدات للتعامل مع الإدخال والإخراج والأجهزة الطرفية/التخزين الثانوي."
+            ]
+          },
+          {
+            "id": "Ch3_ES_03",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 7
+            },
+            "question_en": "Define MAR, MBR, I/OAR, and I/OBR.",
+            "question_ar": "عرّف MAR و MBR و I/OAR و I/OBR.",
+            "answer_points_en": [
+              "MAR (Memory Address Register): specifies the address in memory of the word to be written from or read into the MBR.",
+              "MBR (Memory Buffer Register): contains the word to be written to memory or the word last read from memory.",
+              "I/OAR (I/O Address Register): specifies a particular I/O device.",
+              "I/OBR (I/O Buffer Register): used for exchange of data between an I/O module and the CPU."
+            ],
+            "answer_points_ar": [
+              "MAR: يحدد عنوان موقع الذاكرة للكلمة التي سيتم قراءتها/كتابتها عبر MBR.",
+              "MBR: يحتوي الكلمة التي ستُكتب للذاكرة أو آخر كلمة قُرئت منها.",
+              "I/OAR: يحدد جهاز إدخال/إخراج معين.",
+              "I/OBR: يُستخدم لتبادل البيانات بين وحدة I/O والمعالج."
+            ]
+          },
+          {
+            "id": "Ch3_ES_04",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 10
+            },
+            "question_en": "Explain the basic instruction cycle and its main steps.",
+            "question_ar": "اشرح دورة التعليمة الأساسية (Instruction cycle) وخطواتها الرئيسية.",
+            "answer_points_en": [
+              "Fetch cycle: retrieve the next instruction from memory.",
+              "Execute cycle: interpret and execute the instruction (may involve memory/I/O/data processing/control)."
+            ],
+            "answer_points_ar": [
+              "مرحلة الجلب (Fetch): جلب التعليمة التالية من الذاكرة.",
+              "مرحلة التنفيذ (Execute): تفسير التعليمة وتنفيذها (قد تشمل ذاكرة/I/O/معالجة بيانات/تحكم)."
+            ]
+          },
+          {
+            "id": "Ch3_ES_05",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 19
+            },
+            "question_en": "List the states in the instruction cycle state diagram and briefly describe each.",
+            "question_ar": "اذكر حالات مخطط حالات دورة التعليمة وعرّف كل حالة بإيجاز.",
+            "answer_points_en": [
+              "IF: instruction fetch—read next instruction from memory into the processor.",
+              "IOD: instruction operation decoding—analyze opcode to determine operation.",
+              "OAC: operand address calculation—compute effective address of operand.",
+              "OF: operand fetch—fetch operand from memory or read from I/O.",
+              "DO: data operation—perform operation in processor (e.g., ALU).",
+              "OS: operand store—write result to memory or output to I/O.",
+              "IAC: instruction address calculation—determine address of next instruction (often increment)."
+            ],
+            "answer_points_ar": [
+              "IF: جلب التعليمة من الذاكرة إلى المعالج.",
+              "IOD: فك/تفسير opcode لتحديد العملية.",
+              "OAC: حساب عنوان المعامل (العنوان الفعّال).",
+              "OF: جلب المعامل من الذاكرة أو قراءته من I/O.",
+              "DO: تنفيذ عملية البيانات داخل المعالج (مثلاً عبر ALU).",
+              "OS: تخزين الناتج في الذاكرة أو إرساله لـ I/O.",
+              "IAC: حساب عنوان التعليمة التالية (عادة زيادة ثابتة)."
+            ]
+          },
+          {
+            "id": "Ch3_ES_06",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 22
+            },
+            "question_en": "Define an interrupt and list the classes of interrupts mentioned.",
+            "question_ar": "عرّف المقاطعة واذكر أصناف المقاطعات المذكورة.",
+            "answer_points_en": [
+              "Interrupt: a signal requesting the processor to suspend current execution, service the interrupt, then resume.",
+              "Classes: Program; Timer; I/O; Hardware failure."
+            ],
+            "answer_points_ar": [
+              "المقاطعة: إشارة تطلب من المعالج إيقاف التنفيذ الحالي مؤقتاً وخدمة المقاطعة ثم الاستئناف.",
+              "الأنواع: برنامج؛ مؤقّت؛ إدخال/إخراج؛ عطل عتادي."
+            ]
+          },
+          {
+            "id": "Ch3_ES_07",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 27
+            },
+            "question_en": "Explain DMA and why it is used.",
+            "question_ar": "اشرح DMA ولماذا يُستخدم.",
+            "answer_points_en": [
+              "DMA allows an I/O module to transfer data to/from memory directly without involving the processor in every transfer.",
+              "Processor grants the I/O module authority; frees CPU to do other work."
+            ],
+            "answer_points_ar": [
+              "DMA يسمح لوحدة I/O بنقل البيانات من/إلى الذاكرة مباشرة دون إشراك المعالج في كل عملية نقل.",
+              "المعالج يمنح وحدة I/O الصلاحية؛ ويُحرر CPU لأعمال أخرى."
+            ]
+          },
+          {
+            "id": "Ch3_ES_08",
+            "source": {
+              "file": "chapter 3-2025.pdf",
+              "page": 36
+            },
+            "question_en": "List and briefly define at least three typical control lines on the control bus.",
+            "question_ar": "اذكر وعرّف بإيجاز ثلاثة خطوط تحكم نموذجية على ناقل التحكم.",
+            "answer_points_en": [
+              "Memory write: write data on the bus into the addressed location.",
+              "Memory read: place data from the addressed location on the bus.",
+              "Interrupt request / Interrupt acknowledge: indicate/acknowledge an interrupt.",
+              "Bus request / Bus grant: request/grant control of the bus."
+            ],
+            "answer_points_ar": [
+              "Memory write: كتابة بيانات الناقل في موقع الذاكرة المعنون.",
+              "Memory read: وضع بيانات موقع الذاكرة المعنون على الناقل.",
+              "Interrupt request / Interrupt acknowledge: طلب/تأكيد المقاطعة.",
+              "Bus request / Bus grant: طلب/منح التحكم بالناقل."
+            ]
+          }
+        ]
+      },
+      {
+        "chapter_id": 4,
+        "chapter_title_en": "Computer Memory System and Memory Hierarchy",
+        "chapter_title_ar": "نظام الذاكرة وهرمية الذاكرة",
+        "source_file": "chapter 4-2025.pdf",
+        "pages_total": 20,
+        "true_false": [
+          {
+            "id": "Ch4_TF_01",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 2
+            },
+            "statement_en": "A typical computer system is equipped with a hierarchy of memory subsystems.",
+            "statement_ar": "النظام الحاسوبي النموذجي مجهز بهرمية من أنظمة الذاكرة الفرعية.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch4_TF_02",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 2
+            },
+            "statement_en": "Internal memory is directly accessible by the processor, while external memory is accessed via an I/O module.",
+            "statement_ar": "الذاكرة الداخلية يمكن للمعالج الوصول إليها مباشرة، بينما الذاكرة الخارجية يتم الوصول إليها عبر وحدة I/O.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch4_TF_03",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 4
+            },
+            "statement_en": "Cache is another form of internal memory.",
+            "statement_ar": "الكاش هو شكل آخر من أشكال الذاكرة الداخلية.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch4_TF_04",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 5
+            },
+            "statement_en": "Memory capacity is typically expressed in terms of the number of words or bytes.",
+            "statement_ar": "سعة الذاكرة تُعبّر عادةً بعدد الكلمات (Words) أو البايتات (Bytes).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch4_TF_05",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 6
+            },
+            "statement_en": "For internal memory, the unit of transfer (bits read/written at a time) is usually governed by data bus width.",
+            "statement_ar": "في الذاكرة الداخلية، وحدة النقل غالباً تحكمها سعة/عرض ناقل البيانات.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch4_TF_06",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 7
+            },
+            "statement_en": "Sequential access memory has constant access time independent of data location and prior accesses.",
+            "statement_ar": "الذاكرة ذات الوصول التسلسلي زمن الوصول فيها ثابت ولا يعتمد على موقع البيانات أو الوصولات السابقة.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Sequential access time is variable and depends on the location of data and the previous location accessed.",
+            "correction_ar": "الوصول التسلسلي زمنه متغير ويعتمد على موقع البيانات والموقع السابق الذي تم الوصول إليه."
+          },
+          {
+            "id": "Ch4_TF_07",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 7
+            },
+            "statement_en": "Associative access retrieves a word based on a portion of its contents rather than its address.",
+            "statement_ar": "الوصول الترابطي (Associative) يسترجع الكلمة بناءً على جزء من محتواها بدلاً من عنوانها.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch4_TF_08",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 8
+            },
+            "statement_en": "Memory cycle time equals access time plus any additional time required before a second access can begin.",
+            "statement_ar": "زمن دورة الذاكرة (Memory cycle time) يساوي زمن الوصول بالإضافة لأي زمن إضافي قبل بدء وصول ثانٍ.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch4_TF_09",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 8
+            },
+            "statement_en": "For random-access memory, transfer rate is equal to 1/(cycle time).",
+            "statement_ar": "في الذاكرة ذات الوصول العشوائي، معدل النقل يساوي 1/(زمن الدورة).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch4_TF_10",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 10
+            },
+            "statement_en": "Volatile memory retains information without electrical power.",
+            "statement_ar": "الذاكرة المتطايرة (Volatile) تحتفظ بالمعلومات دون طاقة كهربائية.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Nonvolatile memory retains information without electrical power; volatile memory loses information when power is off.",
+            "correction_ar": "الذاكرة غير المتطايرة هي التي تحتفظ بالمعلومات دون طاقة؛ أما المتطايرة فتفقد المعلومات عند انقطاع الكهرباء."
+          },
+          {
+            "id": "Ch4_TF_11",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 11
+            },
+            "statement_en": "Nonerasable semiconductor memory is known as ROM.",
+            "statement_ar": "الذاكرة شبه الموصلة غير القابلة للمحو تُعرف بـ ROM.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch4_TF_12",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 12
+            },
+            "statement_en": "There is a trade-off among memory capacity, access time, and cost.",
+            "statement_ar": "هناك مفاضلة بين سعة الذاكرة وزمن الوصول والتكلفة.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch4_TF_13",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 12
+            },
+            "statement_en": "Greater capacity generally implies faster access time.",
+            "statement_ar": "زيادة السعة تعني عادةً زمن وصول أسرع.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Greater capacity generally implies slower access time (and smaller cost per bit).",
+            "correction_ar": "زيادة السعة تعني عادةً زمن وصول أبطأ (وتكلفة بت أقل)."
+          },
+          {
+            "id": "Ch4_TF_14",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 13
+            },
+            "statement_en": "The goal of a memory hierarchy is to keep frequently accessed data high in the hierarchy for quick access.",
+            "statement_ar": "هدف هرمية الذاكرة هو إبقاء البيانات كثيرة الاستخدام في أعلى الهرم للوصول السريع.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch4_TF_15",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 16
+            },
+            "statement_en": "Disk cache uses a portion of main memory as a buffer to hold data temporarily that is to be read out to disk.",
+            "statement_ar": "كاش القرص (Disk cache) يستخدم جزءاً من الذاكرة الرئيسية كذاكرة وسيطة لتخزين بيانات مؤقتاً قبل إرسالها للقرص.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch4_TF_16",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 20
+            },
+            "statement_en": "In the memory hierarchy table, main memory (DRAM) is managed by the operating system (OS).",
+            "statement_ar": "في جدول هرمية الذاكرة، الذاكرة الرئيسية (DRAM) يديرها نظام التشغيل (OS).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          }
+        ],
+        "essay": [
+          {
+            "id": "Ch4_ES_01",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 2
+            },
+            "question_en": "Differentiate internal memory and external memory and give examples of each.",
+            "question_ar": "ميّز بين الذاكرة الداخلية والذاكرة الخارجية واذكر أمثلة لكلٍ منهما.",
+            "answer_points_en": [
+              "Internal memory: directly accessible by the processor (e.g., registers, cache, main memory).",
+              "External memory: peripheral storage accessible via I/O (e.g., optical disks, magnetic disks, tapes)."
+            ],
+            "answer_points_ar": [
+              "الداخلية: يمكن للمعالج الوصول إليها مباشرة (مثل السجلات، الكاش، الذاكرة الرئيسية).",
+              "الخارجية: تخزين طرفي عبر وحدات I/O (مثل الأقراص الضوئية، الأقراص المغناطيسية، الأشرطة)."
+            ]
+          },
+          {
+            "id": "Ch4_ES_02",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 3
+            },
+            "question_en": "List the major characteristics/categories used to describe memory systems (as in the slide).",
+            "question_ar": "اذكر الخصائص/الفئات الرئيسية المستخدمة لوصف أنظمة الذاكرة (حسب الشريحة).",
+            "answer_points_en": [
+              "Location",
+              "Capacity",
+              "Unit of transfer",
+              "Access method",
+              "Performance (access time, cycle time, transfer rate)",
+              "Physical type",
+              "Physical characteristics (volatile/nonvolatile, erasable/nonerasable)",
+              "Organization (memory modules)"
+            ],
+            "answer_points_ar": [
+              "الموقع (Location)",
+              "السعة (Capacity)",
+              "وحدة النقل (Unit of transfer)",
+              "طريقة الوصول (Access method)",
+              "الأداء (زمن الوصول، زمن الدورة، معدل النقل)",
+              "النوع الفيزيائي (Physical type)",
+              "الخصائص الفيزيائية (متطايرة/غير متطايرة، قابلة للمحو/غير قابلة)",
+              "التنظيم (Organization) مثل وحدات الذاكرة"
+            ]
+          },
+          {
+            "id": "Ch4_ES_03",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 7
+            },
+            "question_en": "Compare sequential, direct, random, and associative access methods and give an example for each.",
+            "question_ar": "قارن بين طرق الوصول: تسلسلي، مباشر، عشوائي، ترابطي واذكر مثالاً لكل طريقة.",
+            "answer_points_en": [
+              "Sequential: access in linear sequence; variable access time (e.g., tape).",
+              "Direct: shared read-write mechanism; variable access time (e.g., disk).",
+              "Random: any address accessed directly; constant access time (e.g., RAM).",
+              "Associative: retrieve by content rather than address; constant access time (e.g., cache)."
+            ],
+            "answer_points_ar": [
+              "تسلسلي: الوصول بالتتابع؛ زمن متغير (مثال: الشريط).",
+              "مباشر: آلية قراءة/كتابة مشتركة؛ زمن متغير (مثال: القرص).",
+              "عشوائي: الوصول لأي عنوان مباشرة؛ زمن ثابت (مثال: RAM).",
+              "ترابطي: الاسترجاع حسب المحتوى وليس العنوان؛ زمن ثابت (مثال: الكاش)."
+            ]
+          },
+          {
+            "id": "Ch4_ES_04",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 8
+            },
+            "question_en": "Define access time (latency), memory cycle time, and transfer rate.",
+            "question_ar": "عرّف: زمن الوصول (Latency)، زمن دورة الذاكرة، ومعدل النقل.",
+            "answer_points_en": [
+              "Access time (latency): time to perform a read/write (random access) or to position mechanism (non-random).",
+              "Memory cycle time: access time plus additional time before a second access can start.",
+              "Transfer rate: rate at which data can be transferred into or out of a memory unit."
+            ],
+            "answer_points_ar": [
+              "زمن الوصول: زمن قراءة/كتابة (في الوصول العشوائي) أو زمن تموضع آلية القراءة/الكتابة (في غير العشوائي).",
+              "زمن دورة الذاكرة: زمن الوصول + زمن إضافي قبل بدء وصول ثانٍ.",
+              "معدل النقل: معدل نقل البيانات إلى/من وحدة الذاكرة."
+            ]
+          },
+          {
+            "id": "Ch4_ES_05",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 12
+            },
+            "question_en": "Explain why memory hierarchy is used (the memory dilemma).",
+            "question_ar": "اشرح لماذا نستخدم هرمية الذاكرة (مشكلة/معضلة الذاكرة).",
+            "answer_points_en": [
+              "Design constraints: how much, how fast, how expensive.",
+              "Trade-offs: faster memory costs more per bit; larger capacity costs less per bit but is slower.",
+              "Solution: use multiple memory levels (hierarchy) rather than relying on a single technology."
+            ],
+            "answer_points_ar": [
+              "قيود التصميم: كم (السعة)، كم هو سريع، كم هو مكلف.",
+              "مفاضلات: ذاكرة أسرع تعني تكلفة أعلى لكل بت؛ سعة أكبر تعني تكلفة أقل لكل بت لكنها أبطأ.",
+              "الحل: استخدام مستويات متعددة (هرمية) بدل الاعتماد على تقنية ذاكرة واحدة."
+            ]
+          },
+          {
+            "id": "Ch4_ES_06",
+            "source": {
+              "file": "chapter 4-2025.pdf",
+              "page": 20
+            },
+            "question_en": "According to the memory-device table, state the typical technology and manager for each level (registers, cache, main memory, secondary).",
+            "question_ar": "حسب جدول خصائص أجهزة الذاكرة، اذكر التقنية النموذجية ومن يديرها لكل مستوى (السجلات، الكاش، الذاكرة الرئيسية، الذاكرة الثانوية).",
+            "answer_points_en": [
+              "Registers: CMOS; managed by compiler.",
+              "Cache: SRAM/eDRAM; managed by processor hardware.",
+              "Main memory: DRAM; managed by operating system (OS).",
+              "Secondary memory: magnetic disk; managed by OS/user."
+            ],
+            "answer_points_ar": [
+              "السجلات: CMOS؛ يديرها المترجم (Compiler).",
+              "الكاش: SRAM/eDRAM؛ يديره عتاد المعالج.",
+              "الذاكرة الرئيسية: DRAM؛ يديرها نظام التشغيل.",
+              "الذاكرة الثانوية: قرص مغناطيسي؛ يديرها نظام التشغيل/المستخدم."
+            ]
+          }
+        ]
+      },
+      {
+        "chapter_id": 5,
+        "chapter_title_en": "Cache Memory Principles",
+        "chapter_title_ar": "مبادئ ذاكرة الكاش",
+        "source_file": "chapter 5-2025.pdf",
+        "pages_total": 29,
+        "true_false": [
+          {
+            "id": "Ch5_TF_01",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 4
+            },
+            "statement_en": "If the requested word is not in the cache, the block containing that word is loaded into the cache and then the word is delivered to the processor.",
+            "statement_ar": "إذا لم تكن الكلمة المطلوبة موجودة في الكاش، يتم تحميل البلوك الذي يحتويها إلى الكاش ثم تُسلَّم الكلمة للمعالج.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_02",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 4
+            },
+            "statement_en": "A cache hit occurs when the block containing the requested address is not in the cache.",
+            "statement_ar": "يحدث Cache hit عندما لا يكون البلوك الذي يحتوي العنوان المطلوب موجوداً في الكاش.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "A cache hit occurs when the requested word/block is found in the cache.",
+            "correction_ar": "الـ Cache hit يحدث عندما تكون الكلمة/البلوك المطلوب موجوداً في الكاش."
+          },
+          {
+            "id": "Ch5_TF_03",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 5
+            },
+            "statement_en": "A smaller, faster device at level k caches a subset of the blocks from the larger, slower device at level k+1.",
+            "statement_ar": "الجهاز الأصغر والأسرع عند المستوى k يخزّن (Caches) مجموعة فرعية من بلوكات الجهاز الأكبر والأبطأ عند المستوى k+1.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_04",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 6
+            },
+            "statement_en": "Placement policy decides which existing cache block should be evicted when the cache is full.",
+            "statement_ar": "سياسة الإحلال (Placement policy) تحدد أي بلوك يتم طرده (evict) عندما يكون الكاش ممتلئاً.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Replacement policy decides which block to evict; placement policy decides where the new block can go.",
+            "correction_ar": "سياسة الاستبدال (Replacement) تحدد البلوك المطرود؛ أما سياسة الإحلال/التوضيع (Placement) فتحدد أين يمكن وضع البلوك الجديد."
+          },
+          {
+            "id": "Ch5_TF_05",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 7
+            },
+            "statement_en": "In a typical cache organization, the cache connects to the processor via data, control, and address lines.",
+            "statement_ar": "في التنظيم النموذجي للكاش، يتصل الكاش بالمعالج عبر خطوط البيانات والتحكم والعناوين.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_06",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 8
+            },
+            "statement_en": "Mapping function, replacement algorithm, write policy, line size, and number of caches are elements of cache design.",
+            "statement_ar": "دالة الربط (Mapping function) وخوارزمية الاستبدال وسياسة الكتابة وحجم السطر/الخط (Line size) وعدد مستويات الكاش من عناصر تصميم الكاش.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_07",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 9
+            },
+            "statement_en": "Virtual memory is a section of a hard disk set up to emulate the computer’s RAM.",
+            "statement_ar": "الذاكرة الافتراضية هي جزء من القرص الصلب مُعدّ لمحاكاة ذاكرة RAM.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_08",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 11
+            },
+            "statement_en": "Address translation converts virtual addresses into physical addresses via an OS-managed lookup table (page table).",
+            "statement_ar": "ترجمة العناوين تحول العناوين الافتراضية إلى عناوين فعلية عبر جدول تديره أنظمة التشغيل (Page table).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_09",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 12
+            },
+            "statement_en": "A hardware memory management unit (MMU) translates each virtual address into a physical address in main memory.",
+            "statement_ar": "وحدة إدارة الذاكرة (MMU) تترجم كل عنوان افتراضي إلى عنوان فعلي في الذاكرة الرئيسية.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_10",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 14
+            },
+            "statement_en": "Large caches tend to be slightly faster than small ones.",
+            "statement_ar": "الكاشات الكبيرة تميل لأن تكون أسرع قليلاً من الكاشات الصغيرة.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Large caches tend to be slightly slower than small ones.",
+            "correction_ar": "الكاشات الكبيرة تميل لأن تكون أبطأ قليلاً من الصغيرة."
+          },
+          {
+            "id": "Ch5_TF_11",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 16
+            },
+            "statement_en": "Direct mapping maps each block of main memory into only one possible cache line (many-to-one).",
+            "statement_ar": "الربط المباشر (Direct mapping) يربط كل بلوك من الذاكرة الرئيسية بخط كاش واحد ممكن فقط (many-to-one).",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_12",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 18
+            },
+            "statement_en": "Associative mapping permits each main memory block to be loaded into any line of the cache.",
+            "statement_ar": "الربط الترابطي (Associative) يسمح بتحميل أي بلوك من الذاكرة الرئيسية في أي خط من الكاش.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_13",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 18
+            },
+            "statement_en": "In associative mapping, the cache control logic must examine every line’s tag simultaneously to find a match.",
+            "statement_ar": "في الربط الترابطي يجب على منطق تحكم الكاش فحص Tag لكل الخطوط في نفس الوقت للبحث عن تطابق.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_14",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 16
+            },
+            "statement_en": "Set-associative mapping is a compromise between direct and associative mapping techniques.",
+            "statement_ar": "الربط شبه الترابطي (Set-associative) حل وسط بين الربط المباشر والربط الترابطي.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_15",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 20
+            },
+            "statement_en": "For direct mapping, replacement choice is not possible because there is only one possible line for any particular block.",
+            "statement_ar": "في الربط المباشر لا يوجد خيار للاستبدال لأن لكل بلوك خطاً واحداً ممكناً فقط.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_16",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 21
+            },
+            "statement_en": "LRU replaces the block that has experienced the fewest references.",
+            "statement_ar": "خوارزمية LRU تستبدل البلوك الذي تمت الإشارة إليه أقل عدد من المرات.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "LFU replaces the least frequently used; LRU replaces the block that has been in the cache longest with no reference (least recently used).",
+            "correction_ar": "LFU تستبدل الأقل استخداماً من حيث التكرار؛ أما LRU فتستبدل الأقل حداثة في الاستخدام (الأطول دون مرجع)."
+          },
+          {
+            "id": "Ch5_TF_17",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 22
+            },
+            "statement_en": "If a cache line has not been altered, it may be overwritten without writing the old block back to main memory first.",
+            "statement_ar": "إذا لم يتم تعديل سطر الكاش، يمكن الكتابة فوقه دون كتابة البلوك القديم إلى الذاكرة الرئيسية أولاً.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_18",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 23
+            },
+            "statement_en": "With multiple processors and local caches, updating a word in one cache can invalidate a word in other caches.",
+            "statement_ar": "عند وجود عدة معالجات ولكل منها كاش محلي، تعديل كلمة في كاش واحد قد يُبطل كلمة في كاشات أخرى.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_19",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 24
+            },
+            "statement_en": "Write-through updates main memory and cache on every write, which can generate substantial memory traffic.",
+            "statement_ar": "الكتابة عبر (Write-through) تحدّث الذاكرة الرئيسية والكاش في كل عملية كتابة، وقد تولّد حركة مرور كبيرة للذاكرة.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_20",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 24
+            },
+            "statement_en": "Write-back updates are made only in main memory; the cache is updated later.",
+            "statement_ar": "الكتابة المرتجعة (Write-back) تحدّث الذاكرة الرئيسية فقط؛ ثم يتم تحديث الكاش لاحقاً.",
+            "answer_boolean": false,
+            "answer_en": "False",
+            "answer_ar": "خطأ",
+            "correction_en": "Write-back updates are made only in the cache; main memory is updated when the cache line is written back (e.g., on replacement).",
+            "correction_ar": "Write-back يحدّث الكاش فقط؛ وتُحدّث الذاكرة الرئيسية عند كتابة السطر للخارج (مثل عند الاستبدال)."
+          },
+          {
+            "id": "Ch5_TF_21",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 25
+            },
+            "statement_en": "Larger cache blocks reduce the number of blocks that fit into a cache.",
+            "statement_ar": "زيادة حجم البلوك في الكاش تقلّل عدد البلوكات التي يمكن أن تتسع لها ذاكرة الكاش.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_22",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 27
+            },
+            "statement_en": "In a two-level cache, the internal cache is level 1 (L1) and the external cache is level 2 (L2).",
+            "statement_ar": "في الكاش ذو مستويين: الكاش الداخلي هو L1 والكاش الخارجي هو L2.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_23",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 28
+            },
+            "statement_en": "Trend is toward split caches at L1 and unified caches for higher levels.",
+            "statement_ar": "الاتجاه هو تقسيم الكاش في المستوى L1 (تعليمات/بيانات) وتوحيده في المستويات الأعلى.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          },
+          {
+            "id": "Ch5_TF_24",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 29
+            },
+            "statement_en": "Split caches eliminate cache contention between instruction fetch/decode and execution units.",
+            "statement_ar": "الكاش المقسّم يلغي التنافس على الكاش بين وحدة جلب/فك التعليمات ووحدة التنفيذ.",
+            "answer_boolean": true,
+            "answer_en": "True",
+            "answer_ar": "صح",
+            "correction_en": "",
+            "correction_ar": ""
+          }
+        ],
+        "essay": [
+          {
+            "id": "Ch5_ES_01",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 4
+            },
+            "question_en": "Explain the cache read operation and define cache hit and cache miss.",
+            "question_ar": "اشرح عملية القراءة من الكاش وعرّف: Cache hit و Cache miss.",
+            "answer_points_en": [
+              "Processor generates the read address (RA) of a word.",
+              "If the word is in cache → hit → deliver it to the processor.",
+              "If not → miss → fetch the block containing RA from main memory into cache, then deliver the requested word."
+            ],
+            "answer_points_ar": [
+              "المعالج يولّد عنوان القراءة (RA) للكلمة المطلوبة.",
+              "إذا كانت موجودة في الكاش → Hit → تُرسل للمعالج.",
+              "إذا لم تكن موجودة → Miss → يتم جلب البلوك من الذاكرة الرئيسية إلى الكاش ثم تُرسل الكلمة المطلوبة."
+            ]
+          },
+          {
+            "id": "Ch5_ES_02",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 6
+            },
+            "question_en": "In general caching concepts, what happens on a cache miss when the cache is full? Mention placement and replacement policies.",
+            "question_ar": "في المفاهيم العامة للكاش: ماذا يحدث عند Cache miss إذا كان الكاش ممتلئاً؟ اذكر سياسة الإحلال وسياسة الاستبدال.",
+            "answer_points_en": [
+              "On a miss, the cache at level k must fetch the required block from level k+1.",
+              "If the cache is full, one current block must be replaced (evicted) — the “victim”.",
+              "Placement policy decides where the new block can go (e.g., b mod 4).",
+              "Replacement policy decides which block to evict (e.g., LRU)."
+            ],
+            "answer_points_ar": [
+              "عند الـ miss يجب على كاش المستوى k جلب البلوك من المستوى k+1.",
+              "إذا كان ممتلئاً يجب استبدال/طرد بلوك حالي (Victim).",
+              "سياسة الإحلال تحدد أين يوضع البلوك الجديد (مثل b mod 4).",
+              "سياسة الاستبدال تحدد أي بلوك يُطرد (مثل LRU)."
+            ]
+          },
+          {
+            "id": "Ch5_ES_03",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 8
+            },
+            "question_en": "List the main elements of cache design mentioned in the slides.",
+            "question_ar": "اذكر عناصر تصميم الكاش المذكورة في الشرائح.",
+            "answer_points_en": [
+              "Cache addresses (logical/physical)",
+              "Cache size",
+              "Mapping function (direct/associative/set associative)",
+              "Replacement algorithm (LRU/FIFO/LFU/Random)",
+              "Write policy (write-through/write-back)",
+              "Line size",
+              "Number of caches (single/two level)",
+              "Unified vs split caches"
+            ],
+            "answer_points_ar": [
+              "عناوين الكاش (منطقية/فيزيائية)",
+              "حجم الكاش",
+              "دالة الربط (مباشر/ترابطي/شبه ترابطي)",
+              "خوارزمية الاستبدال (LRU/FIFO/LFU/عشوائي)",
+              "سياسة الكتابة (Write-through/Write-back)",
+              "حجم السطر/الخط (Line size)",
+              "عدد مستويات الكاش (مستوى واحد/مستويان... إلخ)",
+              "كاش موحد أم مقسم (Unified vs Split)"
+            ]
+          },
+          {
+            "id": "Ch5_ES_04",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 11
+            },
+            "question_en": "Explain address translation in a virtual memory system (page table and MMU).",
+            "question_ar": "اشرح ترجمة العناوين في نظام ذاكرة افتراضية (Page table و MMU).",
+            "answer_points_en": [
+              "Instructions contain virtual addresses when virtual memory is used.",
+              "Hardware uses an OS-managed page table to translate virtual addresses to physical addresses.",
+              "The MMU performs the translation for reads and writes to main memory."
+            ],
+            "answer_points_ar": [
+              "عند استخدام الذاكرة الافتراضية تكون عناوين التعليمات عناوين افتراضية.",
+              "العتاد يستخدم جدول صفحات يديره نظام التشغيل لترجمة العناوين الافتراضية إلى عناوين فيزيائية.",
+              "وحدة MMU تقوم بعملية الترجمة في عمليات القراءة والكتابة للذاكرة الرئيسية."
+            ]
+          },
+          {
+            "id": "Ch5_ES_05",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 16
+            },
+            "question_en": "Compare direct, associative, and set-associative cache mapping.",
+            "question_ar": "قارن بين الربط المباشر والربط الترابطي والربط شبه الترابطي في الكاش.",
+            "answer_points_en": [
+              "Direct: each main memory block maps to only one possible cache line (simple, many-to-one).",
+              "Associative: any main memory block can be loaded into any cache line (any-to-any); requires comparing tags across all lines.",
+              "Set-associative: compromise; each block maps to a set, and can be placed in any line within that set."
+            ],
+            "answer_points_ar": [
+              "مباشر: كل بلوك يذهب لخط كاش واحد محدد فقط (بسيط).",
+              "ترابطي: أي بلوك يمكن وضعه في أي خط (يتطلب مقارنة tags لكل الخطوط).",
+              "شبه ترابطي: حل وسط؛ كل بلوك يُربط بمجموعة (Set) ويمكن وضعه في أي خط داخل تلك المجموعة."
+            ]
+          },
+          {
+            "id": "Ch5_ES_06",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 21
+            },
+            "question_en": "List and briefly define LRU, FIFO, and LFU replacement algorithms.",
+            "question_ar": "اذكر وعرّف بإيجاز خوارزميات الاستبدال: LRU و FIFO و LFU.",
+            "answer_points_en": [
+              "LRU (Least Recently Used): replace the block that has been in the cache longest with no reference.",
+              "FIFO (First-In First-Out): replace the oldest block in the set (round-robin/circular).",
+              "LFU (Least Frequently Used): replace the block with the fewest references."
+            ],
+            "answer_points_ar": [
+              "LRU: استبدال الأقل حداثة في الاستخدام (الأطول دون مرجع).",
+              "FIFO: استبدال الأقدم دخولاً في المجموعة (تدوير دائري).",
+              "LFU: استبدال الأقل تكراراً في الإشارات/الاستخدام."
+            ]
+          },
+          {
+            "id": "Ch5_ES_07",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 24
+            },
+            "question_en": "Compare write-through and write-back cache write policies.",
+            "question_ar": "قارن بين سياسات الكتابة: Write-through و Write-back.",
+            "answer_points_en": [
+              "Write-through: write updates are made to both cache and main memory; simple but generates substantial memory traffic.",
+              "Write-back: updates are made only in cache; memory updated when the line is written back (e.g., on replacement); reduces memory writes but needs more complex circuitry/coherence handling."
+            ],
+            "answer_points_ar": [
+              "Write-through: يتم تحديث الكاش والذاكرة الرئيسية مع كل كتابة؛ بسيط لكنه يسبب مروراً كبيراً على الذاكرة.",
+              "Write-back: يتم تحديث الكاش فقط ثم تحديث الذاكرة عند إرجاع السطر (مثلاً عند الاستبدال)؛ يقلل الكتابات لكن يحتاج تعقيداً أكبر وتماسكاً بين الكاشات."
+            ]
+          },
+          {
+            "id": "Ch5_ES_08",
+            "source": {
+              "file": "chapter 5-2025.pdf",
+              "page": 25
+            },
+            "question_en": "Explain line size (block size) and mention the two specific effects described.",
+            "question_ar": "اشرح حجم السطر/البلوك (Line size) واذكر التأثيرين المحددين المذكورين.",
+            "answer_points_en": [
+              "When fetching a block, adjacent words are also retrieved along with the desired word.",
+              "Larger blocks reduce the number of blocks that fit in the cache.",
+              "As block size grows, each additional word is farther from the requested word (less likely to be used)."
+            ],
+            "answer_points_ar": [
+              "عند جلب بلوك يتم جلب كلمات مجاورة بالإضافة للكلمة المطلوبة.",
+              "تكبير البلوك يقلل عدد البلوكات التي تتسع لها ذاكرة الكاش.",
+              "كلما كبر البلوك أصبحت الكلمات الإضافية أبعد عن الكلمة المطلوبة (واحتمالية استخدامها أقل)."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
